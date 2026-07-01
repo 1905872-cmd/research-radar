@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究雷达 · Research Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EBE9E2; --card:#FCFBF8; --ink:#23201B; --ink-soft:#6E695E; --line:#DBD8CF;
+    --accent:#B23A2E; --accent-tint:#F3E2DE; --green:#2F5D4E; --green-tint:#E2ECE7;
+    --serif:'Spectral',Georgia,'Songti SC',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei','Noto Sans SC',Segoe UI,Roboto,sans-serif;
+    --shadow:0 1px 2px rgba(35,32,27,.04),0 6px 20px rgba(35,32,27,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased;min-height:100vh}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+  .shell{display:grid;grid-template-columns:270px 1fr;max-width:1180px;margin:0 auto;min-height:100vh}
+  .side{border-right:1px solid var(--line);padding:30px 26px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:24px;overflow:auto}
+  .brand .mark{display:flex;align-items:center;gap:9px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);position:relative;flex:none}
+  .brand .dot::after{content:"";position:absolute;inset:-6px;border:1px solid var(--accent);border-radius:50%;opacity:.35;animation:pulse 2.6s ease-out infinite}
+  @keyframes pulse{0%{transform:scale(.6);opacity:.5}100%{transform:scale(1.5);opacity:0}}
+  .brand h1{font-family:var(--serif);font-weight:600;font-size:21px}
+  .brand .en{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:13px}
+  .eyebrow{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-bottom:11px}
+
+  nav.tabs{display:flex;flex-direction:column;gap:2px}
+  .tab{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border-radius:9px;cursor:pointer;color:var(--ink-soft);font-weight:500;font-size:14.5px;border:none;background:none;width:100%;text-align:left;transition:.15s;font-family:var(--sans)}
+  .tab:hover{background:#fff;color:var(--ink)}
+  .tab.active{background:var(--ink);color:#fff}
+  .tab .badge{font-size:11.5px;background:var(--accent-tint);color:var(--accent);padding:1px 8px;border-radius:20px;font-weight:600}
+  .tab.active .badge{background:rgba(255,255,255,.2);color:#fff}
+
+  .topics{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:20px;cursor:pointer;background:var(--card);color:var(--ink-soft);transition:.15s;user-select:none}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+  .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .datanote{font-size:11.5px;color:var(--ink-soft);line-height:1.5;border-top:1px solid var(--line);padding-top:16px;margin-top:auto}
+  .datanote b{color:var(--green)}
+
+  main{padding:34px 40px 80px}
+  .head{margin-bottom:22px}
+  .head .kick{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:14px;margin-bottom:4px}
+  .head h2{font-family:var(--serif);font-weight:600;font-size:27px}
+  .head p{color:var(--ink-soft);font-size:13.5px;margin-top:5px;max-width:60ch}
+  .head .tools{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+
+  .demo-banner{display:flex;gap:10px;align-items:flex-start;background:var(--accent-tint);border:1px solid #E7C9C4;border-radius:11px;padding:11px 14px;margin-bottom:20px;font-size:12.5px;color:#7c2f26;line-height:1.5}
+  .demo-banner svg{flex:none;margin-top:1px}
+
+  .feed{display:flex;flex-direction:column;gap:16px}
+  .paper{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s;position:relative}
+  .paper:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(35,32,27,.05),0 14px 34px rgba(35,32,27,.09)}
+  .p-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:12px}
+  .meter{flex:none;width:78px;text-align:center}
+  .meter .num{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1;color:var(--accent)}
+  .meter .num.classic{color:var(--green)}
+  .meter .lab{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:3px}
+  .bar{height:4px;border-radius:3px;background:var(--line);margin-top:7px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+  .bar i.classic{background:var(--green)}
+  .p-body{flex:1;min-width:0}
+  .venue{font-size:11.5px;color:var(--ink-soft);margin-bottom:5px}
+  .venue .type{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:5px;margin-right:8px;font-weight:600;vertical-align:1px}
+  .type.new{background:var(--accent-tint);color:var(--accent)}
+  .type.classic{background:var(--green-tint);color:var(--green)}
+  .p-title{font-family:var(--serif);font-size:18.5px;font-weight:600;line-height:1.35;margin-bottom:3px}
+  .p-title-en{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--ink-soft);margin-bottom:11px}
+  .authors{font-size:12.5px;color:var(--ink-soft);margin-bottom:12px}
+
+  .langbar{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:11px}
+  .langbar button{border:none;background:var(--card);color:var(--ink-soft);font-family:var(--sans);font-size:12px;padding:4px 11px;cursor:pointer;border-right:1px solid var(--line)}
+  .langbar button:last-child{border-right:none}
+  .langbar button.on{background:var(--ink);color:#fff}
+
+  .abstract{font-size:14px;color:#3a362e;margin-bottom:6px}
+  .abstract .en{font-family:var(--serif);font-style:italic;color:var(--ink-soft);display:block;margin-bottom:7px}
+  .why{display:flex;gap:9px;align-items:flex-start;background:#F6F3EC;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:9px 13px;font-size:13px;color:#4a453b;margin:12px 0 14px}
+  .why b{color:var(--accent);font-weight:600;font-style:normal;white-space:nowrap}
+  .paper.is-classic .why{border-left-color:var(--green)}
+  .paper.is-classic .why b{color:var(--green)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:15px}
+  .tags span{font-size:11px;color:var(--ink-soft);background:#F0EEE7;padding:2px 9px;border-radius:6px}
+
+  .p-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+  .btn{font-family:var(--sans);font-size:13px;font-weight:500;padding:7px 14px;border-radius:8px;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);transition:.15s;display:inline-flex;align-items:center;gap:6px}
+  .btn:hover{border-color:var(--ink)}
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn.primary:hover{background:#000}
+  .btn.fav.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.small{font-size:12px;padding:5px 11px}
+  .btn svg{flex:none}
+
+  .empty{text-align:center;padding:70px 20px;color:var(--ink-soft)}
+  .empty .big{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--ink);margin-bottom:8px}
+  .empty svg{margin-bottom:18px;opacity:.5}
+
+  /* Reader modal */
+  .overlay{position:fixed;inset:0;background:rgba(35,32,27,.44);backdrop-filter:blur(2px);z-index:40;display:none;align-items:flex-start;justify-content:center;padding:30px 18px;overflow:auto}
+  .overlay.show{display:flex}
+  .reader{background:var(--card);width:100%;max-width:760px;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.25);overflow:hidden;animation:rise .25s ease}
+  @keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+  .r-head{padding:22px 26px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--card);z-index:2}
+  .r-head .close{position:absolute;top:18px;right:20px;border:none;background:none;cursor:pointer;color:var(--ink-soft);font-size:22px;line-height:1}
+  .r-head .rv{font-size:11.5px;color:var(--ink-soft);margin-bottom:6px}
+  .r-head h3{font-family:var(--serif);font-size:20px;font-weight:600;line-height:1.3;padding-right:30px}
+  .r-head .rh-en{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:13.5px;margin-top:3px}
+  .apa{display:flex;gap:8px;align-items:flex-start;margin-top:14px;background:#F0EEE7;border-radius:8px;padding:9px 12px;font-size:12px;color:#4a453b;line-height:1.5}
+  .apa .lbl{font-weight:600;color:var(--green);white-space:nowrap}
+  .apa .cite{flex:1}
+  .apa .cite i{font-style:italic}
+  .apa button{border:none;background:none;color:var(--accent);cursor:pointer;font-size:11.5px;font-family:var(--sans);white-space:nowrap;padding:0}
+  .r-controls{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:10px;flex-wrap:wrap}
+  .r-hint{font-size:11.5px;color:var(--ink-soft)}
+  .r-body{padding:8px 26px 26px}
+  .para{position:relative;padding:12px 40px 12px 14px;border-radius:9px;margin:2px -14px;transition:background .15s}
+  .para:hover{background:#F6F3EC}
+  .para .en{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:14px;display:block;margin-bottom:5px}
+  .para .zh{font-size:14.5px;color:#33302a}
+  .para .save{position:absolute;top:9px;right:8px;border:1px solid var(--line);background:var(--card);border-radius:7px;width:30px;height:30px;cursor:pointer;color:var(--ink-soft);opacity:0;transition:.15s;display:flex;align-items:center;justify-content:center}
+  .para:hover .save{opacity:1}
+  .para .save:hover{border-color:var(--accent);color:var(--accent)}
+  .figure{border:1px solid var(--line);border-radius:11px;padding:16px;margin:14px 0;background:#fff;position:relative}
+  .figure figcaption{font-size:12px;color:var(--ink-soft);margin-top:10px;text-align:center;font-style:italic}
+  .figure .save{position:absolute;top:10px;right:10px}
+
+  /* Notes */
+  .note{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);position:relative}
+  .note .rm{position:absolute;top:12px;right:14px;border:none;background:none;color:var(--ink-soft);cursor:pointer;font-size:17px;line-height:1}
+  .note .qk{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px}
+  .note .qk.fig{color:var(--green)}
+  .note .ex-en{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:13.5px;margin-bottom:5px}
+  .note .ex-zh{font-size:14.5px;color:#33302a;margin-bottom:11px}
+  .note .n-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+  .note .n-tags span{font-size:11px;color:var(--ink-soft);background:#F0EEE7;padding:2px 9px;border-radius:6px}
+  .note .n-src{display:flex;gap:8px;align-items:flex-start;font-size:11.5px;color:#4a453b;border-top:1px dashed var(--line);padding-top:10px;line-height:1.5}
+  .note .n-src .lbl{color:var(--green);font-weight:600;white-space:nowrap}
+  .note .n-src i{font-style:italic}
+  .note .n-src button{border:none;background:none;color:var(--accent);cursor:pointer;font-size:11px;white-space:nowrap;font-family:var(--sans);padding:0}
+  .note figure{margin:0 0 11px}
+  .note figure svg{max-width:100%;height:auto}
+
+  .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:24px;font-size:13px;z-index:60;opacity:0;transition:.25s;pointer-events:none;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  .m-nav{display:none}
+  @media (max-width:860px){
+    .shell{grid-template-columns:1fr}
+    .side{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);padding:20px 18px;gap:16px}
+    .side nav.tabs,.side .datanote{display:none}
+    main{padding:22px 18px 92px}
+    .head h2{font-size:23px}
+    .m-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);z-index:30;box-shadow:0 -4px 20px rgba(35,32,27,.06)}
+    .m-nav button{flex:1;border:none;background:none;padding:10px 2px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--ink-soft);font-family:var(--sans);font-size:10.5px;position:relative}
+    .m-nav button.active{color:var(--accent)}
+    .m-nav .mbadge{position:absolute;top:5px;right:50%;transform:translateX(16px);background:var(--accent);color:#fff;font-size:9px;min-width:15px;height:15px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 3px}
+    .overlay{padding:0}
+    .reader{max-width:none;border-radius:0;min-height:100vh}
+    .r-head,.r-body{padding-left:18px;padding-right:18px}
+  }
+  @media (max-width:420px){.meter{width:60px}.meter .num{font-size:20px}.paper{padding:17px 16px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand">
+      <div class="mark"><span class="dot"></span><h1>研究雷达</h1></div>
+      <span class="en">Research Radar · your daily reading</span>
+    </div>
+    <nav class="tabs" id="deskTabs">
+      <button class="tab active" data-tab="today">今日精选 <span class="badge" id="b-today">6</span></button>
+      <button class="tab" data-tab="classic">经典文献 <span class="badge" id="b-classic">7</span></button>
+      <button class="tab" data-tab="notes">学习笔记 <span class="badge" id="b-notes">0</span></button>
+      <button class="tab" data-tab="fav">我的收藏 <span class="badge" id="b-fav">0</span></button>
+    </nav>
+    <div><div class="eyebrow">追踪的研究主题</div><div class="topics" id="topics"></div></div>
+    <div class="datanote"><b>今日精选</b>为演示数据。正式版接入 <b>OpenAlex</b> 每日抓取顶刊，翻译走翻译 API / Claude，笔记与来源持久保存。</div>
+  </aside>
+  <main>
+    <div class="head" id="head"></div>
+    <div id="demoBanner"></div>
+    <div class="feed" id="feed"></div>
+  </main>
+</div>
+
+<nav class="m-nav" id="mNav">
+  <button class="active" data-tab="today"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.5-6.5L16 7M8 16l-1.5 1.5m0-11L8 8m8 8l1.5 1.5"/></svg>今日</button>
+  <button data-tab="classic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A1.5 1.5 0 015.5 4H11v16H5.5A1.5 1.5 0 014 18.5v-13zM20 5.5A1.5 1.5 0 0018.5 4H13v16h5.5a1.5 1.5 0 001.5-1.5v-13z"/></svg>经典</button>
+  <button data-tab="notes"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h6"/></svg><span class="mbadge" id="mb-notes" style="display:none">0</span>笔记</button>
+  <button data-tab="fav"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L5.2 9.7l5.4-.8L12 4z"/></svg><span class="mbadge" id="mb-fav" style="display:none">0</span>收藏</button>
+</nav>
+
+<div class="overlay" id="overlay"><div class="reader" id="reader"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const TOPICS=["价值共创","居民参与","节事/事件","互动仪式链","情感互动品质","推-拉动因","自我决定理论","社区/文化遗产","澳门"];
+
+const FIG_EVOL=`<svg viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" font-family="Spectral,serif">
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#B23A2E"/></marker></defs>
+<rect x="20" y="52" width="110" height="46" rx="8" fill="#F3E2DE" stroke="#B23A2E"/><text x="75" y="72" text-anchor="middle" font-size="12" fill="#7c2f26">初始 · 外在</text><text x="75" y="88" text-anchor="middle" font-size="10" fill="#7c2f26">动因微弱·单一</text>
+<rect x="175" y="52" width="110" height="46" rx="8" fill="#F6E7D9" stroke="#B0842F"/><text x="230" y="72" text-anchor="middle" font-size="12" fill="#8a6414">中期 · 过渡</text><text x="230" y="88" text-anchor="middle" font-size="10" fill="#8a6414">强度提升·叠加</text>
+<rect x="330" y="52" width="110" height="46" rx="8" fill="#E2ECE7" stroke="#2F5D4E"/><text x="385" y="72" text-anchor="middle" font-size="12" fill="#2F5D4E">深化 · 内在</text><text x="385" y="88" text-anchor="middle" font-size="10" fill="#2F5D4E">强烈·多元·内化</text>
+<line x1="132" y1="75" x2="171" y2="75" stroke="#B23A2E" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="287" y1="75" x2="326" y2="75" stroke="#B23A2E" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="230" y="28" text-anchor="middle" font-size="12" font-style="italic" fill="#6E695E">动因的三重并行演化</text></svg>`;
+
+const FIG_IR=`<svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" font-family="Spectral,serif">
+<defs><marker id="ar2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2F5D4E"/></marker></defs>
+<rect x="20" y="20" width="130" height="34" rx="7" fill="#E2ECE7" stroke="#2F5D4E"/><text x="85" y="41" text-anchor="middle" font-size="11" fill="#2F5D4E">共同在场</text>
+<rect x="20" y="72" width="130" height="34" rx="7" fill="#E2ECE7" stroke="#2F5D4E"/><text x="85" y="93" text-anchor="middle" font-size="11" fill="#2F5D4E">相互关注</text>
+<rect x="20" y="124" width="130" height="34" rx="7" fill="#E2ECE7" stroke="#2F5D4E"/><text x="85" y="145" text-anchor="middle" font-size="11" fill="#2F5D4E">情感连带</text>
+<rect x="250" y="72" width="150" height="46" rx="9" fill="#F3E2DE" stroke="#B23A2E"/><text x="325" y="92" text-anchor="middle" font-size="12" fill="#7c2f26">情感能量</text><text x="325" y="108" text-anchor="middle" font-size="10" fill="#7c2f26">(EE) 群体团结</text>
+<line x1="152" y1="37" x2="247" y2="86" stroke="#2F5D4E" stroke-width="1.4" marker-end="url(#ar2)"/>
+<line x1="152" y1="89" x2="247" y2="93" stroke="#2F5D4E" stroke-width="1.4" marker-end="url(#ar2)"/>
+<line x1="152" y1="141" x2="247" y2="102" stroke="#2F5D4E" stroke-width="1.4" marker-end="url(#ar2)"/>
+<text x="210" y="180" text-anchor="middle" font-size="11" font-style="italic" fill="#6E695E">互动仪式的组成要素与结果（Collins, 2004）</text></svg>`;
+
+function P(en,zh){return {en,zh}}
+
+const TODAY=[
+ {id:'t1',rel:94,venue:'Tourism Management · 2026',type:'new',
+  zh:'节庆情境下居民价值共创的情感触发机制：一项多阶段追踪研究',en:'Emotional triggers of resident value co-creation in festival settings',
+  authors:'L. Chen, M. Ferreira, K. Wong',
+  absEn:'This study examines how emotional interaction quality evolves with participation depth and drives co-production behavior in community festivals.',
+  abstract:'基于三个时点的居民追踪数据，本文检验情感互动品质如何随参与深度演化，并驱动共同生产行为，发现高强度情感互动会产生"乘法效应"。',
+  why:'几乎命中你的核心命题——情感互动品质×共创行为的动态机制，且是追踪设计，可与你的质性发现互为印证。',
+  tags:['价值共创','情感互动品质','居民参与','节事/事件'],
+  apa:'Chen, L., Ferreira, M., & Wong, K. (2026). Emotional triggers of resident value co-creation in festival settings. <i>Tourism Management, 102</i>, Article 104987.',
+  paras:[P('Resident value co-creation in festivals is not a static state but an evolving process shaped by the emotional quality of interaction.','节庆中的居民价值共创并非静态状态，而是一个由互动情感品质塑造的演化过程。'),
+    P('Using three-wave panel data from 312 residents, we find that emotional interaction quality deepens as participation accumulates, moving from thin to thick engagement.','基于312名居民的三时点面板数据，我们发现情感互动品质随参与积累而加深，从浅层卷入走向深度卷入。'),
+    P('Crucially, high-intensity emotional interaction exerts a multiplier effect, amplifying the shift from passive attendance to active co-creation.','关键在于，高强度的情感互动产生了乘法效应，显著放大了居民从被动出席到主动共创的转变。')],
+  fig:{svg:FIG_EVOL,cap:'图1 · 居民参与动因的三阶段演化模型'}},
+ {id:'t2',rel:88,venue:'Journal of Service Research · 2026',type:'new',
+  zh:'从外在到内在：服务生态系统中参与动机的内化路径',en:'From extrinsic to intrinsic: motivation internalization in service ecosystems',
+  authors:'A. Novak, R. Patel',
+  absEn:'Integrating self-determination theory with service-dominant logic, this paper proposes a three-stage model of motivation internalization.',
+  abstract:'整合自我决定理论与服务主导逻辑，提出动机内化的三阶段模型，并讨论社区情境下操作性资源如何促成内在动机的形成。',
+  why:'直接对上你"从外在转向内在"的模式3，SDT 与 S-D logic 的整合框架可借来强化你第二章的理论对接。',
+  tags:['自我决定理论','价值共创','推-拉动因'],
+  apa:'Novak, A., & Patel, R. (2026). From extrinsic to intrinsic: Motivation internalization in service ecosystems. <i>Journal of Service Research, 29</i>(2), 210–229.'},
+ {id:'t3',rel:81,venue:'Annals of Tourism Research · 2026',type:'new',
+  zh:'东西交汇：跨文化节庆中的社区认同与包容度建构',en:'Where East meets West: community identity in cross-cultural festivals',
+  authors:'S. Lam, J. Oliveira',
+  absEn:'Set in a multicultural city, this study explores how residents negotiate cultural identity and surfaces "cross-cultural tolerance" as an emergent dimension.',
+  abstract:'以一个多元文化城市的传统节庆为案例，探讨居民在中西融合语境下如何协商文化认同，并识别出"跨文化包容度"这一新兴维度。',
+  why:'情境高度贴近澳门，"跨文化包容度"与你的本土化主题几乎同名，适合对话或引用来定位你的情境贡献。',
+  tags:['社区/文化遗产','澳门','节事/事件'],
+  apa:'Lam, S., & Oliveira, J. (2026). Where East meets West: Community identity in cross-cultural festivals. <i>Annals of Tourism Research, 108</i>, Article 103812.',
+  paras:[P('In cities where Chinese and Portuguese traditions intersect, festivals become sites where residents actively negotiate a hybrid cultural identity.','在中葡传统交汇的城市中，节庆成为居民主动协商混合文化认同的场所。'),
+    P('Beyond established motivation dimensions, we identify cross-cultural tolerance as an emergent theme that challenges the homogeneity assumption of ritual chains.','在既有动机维度之外，我们识别出"跨文化包容度"这一新兴主题，它挑战了互动仪式链的同质性假设。')]},
+ {id:'t4',rel:73,venue:'Journal of Sustainable Tourism · 2026',type:'new',
+  zh:'居民赋权作为价值共创的结果：一个阶梯演化视角',en:'Resident empowerment as an outcome of value co-creation',
+  authors:'D. Costa, Y. Zhang',
+  absEn:'This paper proposes a ladder path from behavioral participation and cognitive belonging to psychological empowerment.',
+  abstract:'提出从行为参与、认知归属到心理赋权的阶梯路径，检验社区节庆参与如何逐级提升居民的自我效能与地方认同。',
+  why:'与你"FCB→SOC→RE"的价值成果阶梯路径思路一致，可对照其量表操作化你的第五章测量。',
+  tags:['价值共创','居民参与','社区/文化遗产'],
+  apa:'Costa, D., & Zhang, Y. (2026). Resident empowerment as an outcome of value co-creation. <i>Journal of Sustainable Tourism, 34</i>(4), 561–580.'},
+ {id:'t5',rel:66,venue:'Event Management · 2026',type:'new',
+  zh:'互动仪式如何在小型社区活动中积累情感能量',en:'Accumulating emotional energy in small community events',
+  authors:'P. Marques, H. Liu',
+  absEn:'Applying interaction ritual chain theory to small community events, this study measures co-presence, rhythmic entrainment, and emotional energy.',
+  abstract:'将柯林斯的互动仪式链理论应用于社区小型活动，测量共同在场、节奏同步与情感能量之间的关系。',
+  why:'把 IRC 落到"小型社区活动"这一分析单位，正是你研究的层级，可参考其对情感能量的操作化测量。',
+  tags:['互动仪式链','情感互动品质','节事/事件'],
+  apa:'Marques, P., & Liu, H. (2026). Accumulating emotional energy in small community events. <i>Event Management, 30</i>(1), 45–63.',
+  paras:[P('Small community events, though modest in scale, generate the co-presence and mutual focus that Collins deemed necessary for successful rituals.','小型社区活动虽规模有限，却能产生柯林斯所认为的成功仪式所必需的共同在场与相互关注。'),
+    P('We show that rhythmic entrainment among participants predicts accumulated emotional energy, which in turn sustains repeat participation.','我们发现，参与者之间的节奏同步能预测情感能量的积累，而后者进一步维系了重复参与。')]},
+ {id:'t6',rel:58,venue:'Journal of Travel Research · 2026',type:'new',
+  zh:'推力还是拉力？重访节庆参与动机的结构',en:'Push or pull? Revisiting festival participation motivation',
+  authors:'E. Santos, W. Gao',
+  absEn:'Through latent profile analysis, this study shows that push–pull motivations are not static but shift in emphasis over the participation career.',
+  abstract:'通过潜在剖面分析识别出四类节庆参与者，指出推-拉动因并非静态，而是随参与经历发生重心迁移。',
+  why:'为你"动因演化"提供量化对照——它用 LPA 说明动因重心迁移，可作为你质性模式的补充证据。',
+  tags:['推-拉动因','节事/事件','居民参与'],
+  apa:'Santos, E., & Gao, W. (2026). Push or pull? Revisiting festival participation motivation. <i>Journal of Travel Research, 65</i>(3), 402–418.'}
+];
+
+const CLASSIC=[
+ {id:'c1',rel:'奠基',venue:'Journal of Marketing · 2004',type:'classic',
+  zh:'迈向营销的新主导逻辑（服务主导逻辑）',en:'Evolving to a New Dominant Logic for Marketing',
+  authors:'Vargo, S. L., & Lusch, R. F.',
+  absEn:'The foundational statement of service-dominant logic: value is co-created in use, not delivered by the firm.',
+  abstract:'提出服务主导逻辑（S-D logic），主张价值由顾客在使用中共同创造而非由企业单方交付，奠定了当代价值共创研究的理论基石。',
+  why:'价值共创的源头文献。你第二章讨论 VCC 必引，"操作性资源""价值共创"的定义都从这里来。',
+  tags:['价值共创'],
+  apa:'Vargo, S. L., & Lusch, R. F. (2004). Evolving to a new dominant logic for marketing. <i>Journal of Marketing, 68</i>(1), 1–17.',
+  paras:[P('Marketing has inherited a goods-dominant logic in which value is embedded in units of output and exchanged in transactions.','营销继承了一种以商品为主导的逻辑，其中价值被嵌入产出单位并在交易中被交换。'),
+    P('Service-dominant logic reframes value as something co-created with the customer through the application of operant resources—knowledge and skills.','服务主导逻辑将价值重构为：通过运用操作性资源（知识与技能），与顾客共同创造出来的东西。'),
+    P('The customer is therefore always a co-creator of value, and the firm can only offer value propositions.','因此顾客始终是价值的共同创造者，而企业只能提供价值主张。')]},
+ {id:'c2',rel:'奠基',venue:'J. of Interactive Marketing · 2004',type:'classic',
+  zh:'共创体验：价值创造的下一种实践',en:'Co-creation experiences: The next practice in value creation',
+  authors:'Prahalad, C. K., & Ramaswamy, V.',
+  absEn:'Argues that value is increasingly co-created through interaction, with the co-creation experience as the basis of value.',
+  abstract:'提出以"共创体验"为核心的价值创造观，强调企业与顾客通过互动共同塑造独特体验，是共创研究的另一奠基脉络。',
+  why:'与 Vargo & Lusch 并列的共创两大源头之一，"互动是价值共创的场所"支撑你的 EIQ 论证。',
+  tags:['价值共创','情感互动品质'],
+  apa:'Prahalad, C. K., & Ramaswamy, V. (2004). Co-creation experiences: The next practice in value creation. <i>Journal of Interactive Marketing, 18</i>(3), 5–14.'},
+ {id:'c3',rel:'奠基',venue:'Princeton Univ. Press · 2004',type:'classic',
+  zh:'互动仪式链',en:'Interaction Ritual Chains',
+  authors:'Collins, R.',
+  absEn:'A microsociological theory: co-presence, mutual focus, and shared mood generate emotional energy that chains across situations.',
+  abstract:'系统阐述互动仪式链理论：共同在场、相互关注与情感连带产生"情感能量"，并在情境之间链式传递，是微观社会学的经典。',
+  why:'你 IRC 框架的原典。共同在场、情感能量等核心构念都出自此书，务必回到一手来源引用。',
+  tags:['互动仪式链','情感互动品质'],
+  apa:'Collins, R. (2004). <i>Interaction ritual chains</i>. Princeton University Press.',
+  paras:[P('The building block of society is not the individual but the interaction ritual: a moment of shared attention and emotion.','社会的构成单元不是个体，而是互动仪式——一个共享注意力与情感的时刻。'),
+    P('When people focus on the same object and become aware of each other, they build up a shared mood that intensifies into collective effervescence.','当人们聚焦于同一对象并意识到彼此时，会积累起一种共享情绪，并强化为集体欢腾。'),
+    P('The outcome is emotional energy: confidence, enthusiasm, and a sense of solidarity that individuals carry into subsequent situations.','其结果是情感能量：个体带入后续情境中的自信、热情与团结感。')],
+  fig:{svg:FIG_IR,cap:'图 · 互动仪式的组成要素与结果'}},
+ {id:'c4',rel:'奠基',venue:'Psychological Inquiry · 2000',type:'classic',
+  zh:'目标追求的"是什么"与"为什么"：人类需要与行为的自我决定',en:'The "what" and "why" of goal pursuits',
+  authors:'Deci, E. L., & Ryan, R. M.',
+  absEn:'Sets out self-determination theory: autonomy, competence, and relatedness, and the internalization continuum from extrinsic to intrinsic motivation.',
+  abstract:'阐明自我决定理论的核心——自主、胜任、关联三种基本心理需要，以及外在动机向内在动机内化的连续谱。',
+  why:'你"动机内化""从外在到内在"论述的理论依据，内化连续谱正好对应你的模式3。',
+  tags:['自我决定理论'],
+  apa:'Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. <i>Psychological Inquiry, 11</i>(4), 227–268.',
+  paras:[P('People have three basic psychological needs: autonomy, competence, and relatedness.','人有三种基本心理需要：自主、胜任与关联。'),
+    P('Motivation is not simply present or absent; extrinsic motives can be gradually internalized along a continuum toward self-determination.','动机并非简单的有或无；外在动机可沿着一个连续谱逐步内化，走向自我决定。')]},
+ {id:'c5',rel:'奠基',venue:'Tourism Management · 2008',type:'classic',
+  zh:'事件旅游：定义、演进与研究',en:'Event tourism: Definition, evolution, and research',
+  authors:'Getz, D.',
+  absEn:'A definitive review that maps the conceptual boundaries and research lineage of event and festival tourism.',
+  abstract:'系统梳理事件/节事旅游的概念边界与研究谱系，是节事研究领域被引最广的框架性综述。',
+  why:'节事研究的定位文献。写研究背景、界定"社区文化节事"时，用它锚定你在该领域的坐标。',
+  tags:['节事/事件','社区/文化遗产'],
+  apa:'Getz, D. (2008). Event tourism: Definition, evolution, and research. <i>Tourism Management, 29</i>(3), 403–428.'},
+ {id:'c6',rel:'奠基',venue:'Marketing Theory · 2011',type:'classic',
+  zh:'服务逻辑中的价值共创：一个批判性分析',en:'Value co-creation in service logic: A critical analysis',
+  authors:'Grönroos, C.',
+  absEn:'Critically clarifies co-creation, distinguishing value co-creation from value facilitation: the customer is the value creator.',
+  abstract:'对价值共创概念作批判性厘清，区分"价值共创"与"价值促进"，指出顾客才是价值创造者、企业是价值促进者。',
+  why:'帮你把共创概念用准——很多论文混用共创与促进，引它能显出你对概念边界的敏感度。',
+  tags:['价值共创','居民参与'],
+  apa:'Grönroos, C. (2011). Value co-creation in service logic: A critical analysis. <i>Marketing Theory, 11</i>(3), 279–301.'},
+ {id:'c7',rel:'奠基',venue:'Annals of Tourism Research · 1977',type:'classic',
+  zh:'失范、自我提升与旅游（推-拉动因源头）',en:'Anomie, ego-enhancement and tourism',
+  authors:'Dann, G. M. S.',
+  absEn:'The classic origin of the push–pull framework, distinguishing internal push factors from destination pull factors.',
+  abstract:'最早系统区分旅游动机中的"推力"（内在需要）与"拉力"（目的地吸引），是推-拉动因框架的经典起点。',
+  why:'推-拉动因的原始出处。你谈动因结构时回引它，比只引二手综述更扎实。',
+  tags:['推-拉动因'],
+  apa:'Dann, G. M. S. (1977). Anomie, ego-enhancement and tourism. <i>Annals of Tourism Research, 4</i>(4), 184–194.'}
+];
+
+const ALL=[...TODAY,...CLASSIC];
+const byId=id=>ALL.find(p=>p.id===id);
+
+let favs=new Set(), notes=[], activeTab='today', filter=null, cardLang={}, readerLang='both', readerId=null;
+let REAL=false, REAL_META=null;
+
+const feed=document.getElementById('feed'), headEl=document.getElementById('head'), bannerEl=document.getElementById('demoBanner');
+const HEADS={
+ today:{kick:'每日更新 · 昨日新增',t:'今日精选',p:'按你追踪的主题打分排序。点开任意一篇进入双语阅读，划句即可记入笔记。'},
+ classic:{kick:'长期沉淀 · 种子文献库',t:'经典文献',p:'你方向的奠基之作。这些不会过时，值得反复回看与摘录。'},
+ notes:{kick:'边读边记 · 自动溯源',t:'学习笔记',p:'你摘录的段落与图，已自动打上主题标签并按 APA 记录来源。'},
+ fav:{kick:'你保存的',t:'我的收藏',p:'从任意卡片点收藏即可加入，方便集中重读。'}
+};
+
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1900)}
+async function copy(text,msg){try{await navigator.clipboard.writeText(text)}catch(e){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}toast(msg||'已复制')}
+function stripTags(s){return s.replace(/<[^>]+>/g,'')}
+
+function renderTopics(){const box=document.getElementById('topics');box.innerHTML='';TOPICS.forEach(t=>{const c=document.createElement('span');c.className='chip'+(filter===t?' on':'');c.textContent=t;c.onclick=()=>{filter=(filter===t?null:t);renderTopics();renderFeed()};box.appendChild(c)})}
+
+function abstractHTML(p){const lang=cardLang[p.id]||'zh';let h='';if(lang==='en'||lang==='both')h+=`<span class="en">${p.absEn}</span>`;if(lang==='zh'||lang==='both')h+=`${p.abstract}`;return h}
+
+function paperCard(p){
+ const faved=favs.has(p.id),isC=p.type==='classic',relNum=typeof p.rel==='number',lang=cardLang[p.id]||'zh';
+ const el=document.createElement('article');el.className='paper'+(isC?' is-classic':'');
+ el.innerHTML=`
+  <div class="p-top">
+   <div class="meter"><div class="num ${isC?'classic':''}">${relNum?p.rel+'<span style="font-size:13px">%</span>':p.rel}</div>
+    <div class="lab">${relNum?'相关度':'地位'}</div>
+    <div class="bar"><i class="${isC?'classic':''}" style="width:${relNum?p.rel:100}%"></i></div></div>
+   <div class="p-body">
+    <div class="venue"><span class="type ${p.type}">${isC?'经典':'最新'}</span>${p.venue}</div>
+    <div class="p-title">${p.zh}</div><div class="p-title-en">${p.en}</div>
+    <div class="authors">${p.authors}</div>
+    <div class="langbar" data-id="${p.id}">
+      <button data-l="zh" class="${lang==='zh'?'on':''}">中文</button>
+      <button data-l="en" class="${lang==='en'?'on':''}">EN</button>
+      <button data-l="both" class="${lang==='both'?'on':''}">双语</button></div>
+   </div></div>
+  <div class="abstract">${abstractHTML(p)}</div>
+  <div class="why"><b>◆ 为什么值得你读</b><span>${p.why}</span></div>
+  <div class="tags">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div>
+  <div class="p-actions">
+   <button class="btn primary read">${isC?'查看并阅读':'双语阅读全文'}</button>
+   <button class="btn fav ${faved?'on':''}">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="${faved?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L5.2 9.7l5.4-.8L12 4z"/></svg>
+    ${faved?'已收藏':'收藏'}</button></div>`;
+ el.querySelector('.fav').onclick=()=>toggleFav(p.id);
+ el.querySelector('.read').onclick=()=>openReader(p.id);
+ el.querySelectorAll('.langbar button').forEach(b=>b.onclick=()=>{cardLang[p.id]=b.dataset.l;renderFeed()});
+ return el;
+}
+
+function currentList(){if(activeTab==='today')return TODAY;if(activeTab==='classic')return CLASSIC;if(activeTab==='fav')return ALL.filter(p=>favs.has(p.id));return[]}
+
+function renderFeed(){
+ const h=HEADS[activeTab];
+ let toolsHTML='';
+ if(activeTab==='notes'&&notes.length)toolsHTML=`<div class="tools"><button class="btn small" id="exportBtn">导出全部（APA）</button><button class="btn small" id="clearBtn">清空</button></div>`;
+ headEl.innerHTML=`<div class="kick">${h.kick}</div><h2>${h.t}</h2><p>${h.p}</p>${toolsHTML}`;
+ if(activeTab==='today'){
+   bannerEl.innerHTML = REAL
+    ? `<div class="demo-banner" style="background:var(--green-tint);border-color:#BcD3CA;color:#22503f"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg><span><b>实时数据 · OpenAlex</b>　更新于 ${REAL_META||'刚刚'}，共 ${TODAY.length} 篇，按你的研究画像打分排序。</span></div>`
+    : `<div class="demo-banner"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v5m0 3h.01"/></svg><span><b>演示数据</b>：未检测到 papers.json，当前为占位示例。跑一次 fetch_openalex.py 并本地起服务，这里就会换成真实的每日新论文。</span></div>`;
+ } else { bannerEl.innerHTML=''; }
+ if(activeTab==='notes'){renderNotes();bindNoteTools();return}
+ let list=currentList();if(filter)list=list.filter(p=>p.tags.includes(filter));
+ feed.innerHTML='';
+ if(!list.length){feed.innerHTML=emptyBox();return}
+ list.forEach(p=>feed.appendChild(paperCard(p)));
+}
+
+function emptyBox(){
+ const isFav=activeTab==='fav';
+ return `<div class="empty"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L5.2 9.7l5.4-.8L12 4z"/></svg>
+  <div class="big">${isFav?'还没有收藏':'没有匹配这个主题的文献'}</div>
+  <div>${isFav?'在任意卡片点"收藏"即可加入这里。':'点掉左侧的主题筛选试试。'}</div></div>`;
+}
+
+function renderNotes(){
+ feed.innerHTML='';
+ if(!notes.length){feed.innerHTML=`<div class="empty"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h6"/></svg><div class="big">笔记本还是空的</div><div>打开一篇文献进入阅读，把段落或图<br>点"记入笔记"即可，来源会自动按 APA 记好。</div></div>`;return}
+ notes.slice().reverse().forEach(n=>{
+  const p=byId(n.pid);
+  const el=document.createElement('article');el.className='note';
+  const body=n.type==='figure'
+    ? `<figure>${n.svg}<figcaption style="font-size:12px;color:var(--ink-soft);text-align:center;font-style:italic;margin-top:6px">${n.cap}</figcaption></figure>`
+    : `<div class="ex-en">${n.en}</div><div class="ex-zh">${n.zh}</div>`;
+  el.innerHTML=`
+   <button class="rm" title="删除">×</button>
+   <div class="qk ${n.type==='figure'?'fig':''}">${n.type==='figure'?'◧ 图形摘录':'❝ 段落摘录'} · ${n.time}</div>
+   ${body}
+   <div class="n-tags">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div>
+   <div class="n-src"><span class="lbl">APA 来源</span><span class="cite">${p.apa}</span><button class="cp">复制</button></div>`;
+  el.querySelector('.rm').onclick=()=>{notes=notes.filter(x=>x!==n);updateBadges();renderFeed()};
+  el.querySelector('.cp').onclick=()=>copy(stripTags(p.apa),'APA 引用已复制');
+  feed.appendChild(el);
+ });
+}
+
+function bindNoteTools(){
+ const ex=document.getElementById('exportBtn'),cl=document.getElementById('clearBtn');
+ if(ex)ex.onclick=()=>{
+   const out=notes.map((n,i)=>{const p=byId(n.pid);const excerpt=n.type==='figure'?`[图] ${n.cap}`:`${n.zh}\n${n.en}`;return `${i+1}. ${excerpt}\n   来源：${stripTags(p.apa)}\n   标签：${p.tags.join('、')}`}).join('\n\n');
+   copy(out,`已复制 ${notes.length} 条笔记`);
+ };
+ if(cl)cl.onclick=()=>{if(confirm('清空全部笔记？')){notes=[];updateBadges();renderFeed()}};
+}
+
+/* Reader */
+function openReader(id){readerId=id;readerLang='both';renderReader();document.getElementById('overlay').classList.add('show');document.body.style.overflow='hidden'}
+function closeReader(){document.getElementById('overlay').classList.remove('show');document.body.style.overflow='';readerId=null}
+function renderReader(){
+ const p=byId(readerId);if(!p)return;
+ const paras=p.paras||[P(p.absEn,p.abstract)];
+ let bodyHTML='';
+ paras.forEach((pr,i)=>{
+  let inner='';
+  if(readerLang==='en'||readerLang==='both')inner+=`<span class="en">${pr.en}</span>`;
+  if(readerLang==='zh'||readerLang==='both')inner+=`<span class="zh">${pr.zh}</span>`;
+  bodyHTML+=`<div class="para">${inner}<button class="save" data-i="${i}" title="记入笔记">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h11l3 3v13H5z"/><path d="M9 4v4h6"/><path d="M9 13h6"/></svg></button></div>`;
+ });
+ if(p.fig)bodyHTML+=`<figure class="figure">${p.fig.svg}<figcaption>${p.fig.cap}</figcaption>
+   <button class="save savefig" title="记入笔记">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h11l3 3v13H5z"/><path d="M9 4v4h6"/></svg></button></figure>`;
+ document.getElementById('reader').innerHTML=`
+  <div class="r-head"><button class="close" title="关闭">×</button>
+   <div class="rv">${p.venue} · ${p.authors}</div>
+   <h3>${p.zh}</h3><div class="rh-en">${p.en}</div>
+   <div class="apa"><span class="lbl">APA</span><span class="cite">${p.apa}</span><button id="apaCopy">复制引用</button></div>
+   <div class="r-controls">
+    <div class="langbar">
+     <button data-l="zh" class="${readerLang==='zh'?'on':''}">中文</button>
+     <button data-l="en" class="${readerLang==='en'?'on':''}">EN</button>
+     <button data-l="both" class="${readerLang==='both'?'on':''}">双语对照</button></div>
+    <span class="r-hint">悬停段落 → 点右侧图标记入笔记</span></div>
+  </div>
+  <div class="r-body">${bodyHTML}</div>`;
+ const R=document.getElementById('reader');
+ R.querySelector('.close').onclick=closeReader;
+ R.querySelector('#apaCopy').onclick=()=>copy(stripTags(p.apa),'APA 引用已复制');
+ R.querySelectorAll('.langbar button').forEach(b=>b.onclick=()=>{readerLang=b.dataset.l;renderReader()});
+ R.querySelectorAll('.para .save').forEach(b=>b.onclick=()=>saveNote(p.id,+b.dataset.i));
+ const sf=R.querySelector('.savefig');if(sf)sf.onclick=()=>saveFig(p.id);
+}
+
+function saveNote(pid,i){const p=byId(pid);const pr=(p.paras||[P(p.absEn,p.abstract)])[i];
+ notes.push({pid,type:'text',en:pr.en,zh:pr.zh,time:stamp()});updateBadges();toast('已记入学习笔记 · 来源已按 APA 记录')}
+function saveFig(pid){const p=byId(pid);notes.push({pid,type:'figure',svg:p.fig.svg,cap:p.fig.cap,time:stamp()});updateBadges();toast('图形已记入笔记')}
+function stamp(){const d=new Date();return `${d.getMonth()+1}月${d.getDate()}日 ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`}
+
+function toggleFav(id){favs.has(id)?favs.delete(id):favs.add(id);updateBadges();renderFeed()}
+function updateBadges(){
+ document.getElementById('b-today').textContent=TODAY.length;
+ document.getElementById('b-classic').textContent=CLASSIC.length;
+ document.getElementById('b-notes').textContent=notes.length;
+ document.getElementById('b-fav').textContent=favs.size;
+ [['mb-notes',notes.length],['mb-fav',favs.size]].forEach(([id,v])=>{const e=document.getElementById(id);e.style.display=v?'flex':'none';e.textContent=v});
+}
+function setTab(tab){activeTab=tab;filter=null;renderTopics();
+ document.querySelectorAll('#deskTabs .tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
+ document.querySelectorAll('#mNav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
+ renderFeed();window.scrollTo({top:0,behavior:'smooth'})}
+
+document.querySelectorAll('#deskTabs .tab').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+document.querySelectorAll('#mNav button').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+document.getElementById('overlay').onclick=e=>{if(e.target.id==='overlay')closeReader()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeReader()});
+
+async function loadReal(){
+ try{
+  const r=await fetch('papers.json',{cache:'no-store'});
+  if(!r.ok) throw 0;
+  const j=await r.json();
+  if(j&&Array.isArray(j.papers)&&j.papers.length){
+   TODAY.length=0;
+   j.papers.forEach(p=>TODAY.push(Object.assign({type:'new'},p)));
+   REAL=true; REAL_META=j.generated_at?j.generated_at.replace('T',' '):null;
+  }
+ }catch(e){/* 保持演示数据 */}
+ updateBadges(); if(activeTab==='today') renderFeed();
+}
+
+renderTopics();updateBadges();renderFeed();loadReal();
+</script>
+</body>
+</html>
