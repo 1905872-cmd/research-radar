@@ -1,0 +1,41 @@
+# 研究雷达 · 每日自动抓取
+# 放到仓库的  .github/workflows/daily.yml
+name: Daily paper fetch
+
+on:
+  schedule:
+    - cron: '0 0 * * *'      # 每天 UTC 00:00 = 澳门时间 08:00 运行；改前面的数字可调时间
+  workflow_dispatch:          # 允许在 Actions 页面手动点“Run workflow”
+
+permissions:
+  contents: write             # 允许把更新后的 papers.json 提交回仓库
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 取出仓库代码
+        uses: actions/checkout@v4
+
+      - name: 装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 抓取并打分
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 没设也没关系，会自动跳过中译
+        run: python fetch_openalex.py --days 30 --max 8
+
+      - name: 有更新就提交
+        run: |
+          git config user.name  "research-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -f papers.json ]; then
+            git add papers.json
+            git diff --staged --quiet || git commit -m "更新 papers.json（$(date -u +%Y-%m-%d)）"
+            git push
+          else
+            echo "papers.json 未生成，检查上一步日志（多半是 key 没设对）"; exit 1
+          fi
