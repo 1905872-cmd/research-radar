@@ -352,8 +352,8 @@ const CLASSIC=[
   apa:'Dann, G. M. S. (1977). Anomie, ego-enhancement and tourism. <i>Annals of Tourism Research, 4</i>(4), 184–194.'}
 ];
 
-const ALL=[...TODAY,...CLASSIC];
-const byId=id=>ALL.find(p=>p.id===id);
+const allPapers=()=>[...TODAY,...CLASSIC];
+const byId=id=>allPapers().find(p=>p.id===id);
 
 let favs=new Set(), notes=[], activeTab='today', filter=null, cardLang={}, readerLang='both', readerId=null;
 let REAL=false, REAL_META=null;
@@ -405,7 +405,7 @@ function paperCard(p){
  return el;
 }
 
-function currentList(){if(activeTab==='today')return TODAY;if(activeTab==='classic')return CLASSIC;if(activeTab==='fav')return ALL.filter(p=>favs.has(p.id));return[]}
+function currentList(){if(activeTab==='today')return TODAY;if(activeTab==='classic')return CLASSIC;if(activeTab==='fav')return allPapers().filter(p=>favs.has(p.id));return[]}
 
 function renderFeed(){
  const h=HEADS[activeTab];
