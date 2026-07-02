@@ -4,7 +4,7 @@ name: Daily paper fetch
 
 on:
   schedule:
-    - cron: '0 0 * * *'      # 每天 UTC 00:00 = 澳门时间 08:00 运行；改前面的数字可调时间
+    - cron: '37 1 * * *'      # UTC 01:37 = 澳门 09:37；错开整点和午夜以降低被延迟/丢弃的概率
   workflow_dispatch:          # 允许在 Actions 页面手动点“Run workflow”
 
 permissions:
