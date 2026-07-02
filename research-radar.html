@@ -181,7 +181,7 @@
       <button class="tab" data-tab="fav">我的收藏 <span class="badge" id="b-fav">0</span></button>
     </nav>
     <div><div class="eyebrow">追踪的研究主题</div><div class="topics" id="topics"></div></div>
-    <div class="datanote"><b>今日精选</b>为演示数据。正式版接入 <b>OpenAlex</b> 每日抓取顶刊，翻译走翻译 API / Claude，笔记与来源持久保存。</div>
+    <div class="datanote"><b>今日精选</b>由 <b>OpenAlex</b> 每日抓取、按你的研究画像打分。中文翻译在抓取时生成（免费引擎；设 Claude key 则质量更高）。</div>
   </aside>
   <main>
     <div class="head" id="head"></div>
@@ -372,7 +372,8 @@ function stripTags(s){return s.replace(/<[^>]+>/g,'')}
 
 function renderTopics(){const box=document.getElementById('topics');box.innerHTML='';TOPICS.forEach(t=>{const c=document.createElement('span');c.className='chip'+(filter===t?' on':'');c.textContent=t;c.onclick=()=>{filter=(filter===t?null:t);renderTopics();renderFeed()};box.appendChild(c)})}
 
-function abstractHTML(p){const lang=cardLang[p.id]||'zh';let h='';if(lang==='en'||lang==='both')h+=`<span class="en">${p.absEn}</span>`;if(lang==='zh'||lang==='both')h+=`${p.abstract}`;return h}
+function clip(s,n){s=s||'';return s.length>n? s.slice(0,n).replace(/\s+\S*$/,'')+'…' : s}
+function abstractHTML(p){const lang=cardLang[p.id]||'zh';let h='';if(lang==='en'||lang==='both')h+=`<span class="en">${clip(p.absEn,320)}</span>`;if(lang==='zh'||lang==='both')h+=`${clip(p.abstract,220)}`;return h}
 
 function paperCard(p){
  const faved=favs.has(p.id),isC=p.type==='classic',relNum=typeof p.rel==='number',lang=cardLang[p.id]||'zh';
@@ -395,12 +396,14 @@ function paperCard(p){
   <div class="why"><b>◆ 为什么值得你读</b><span>${p.why}</span></div>
   <div class="tags">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div>
   <div class="p-actions">
-   <button class="btn primary read">${isC?'查看并阅读':'双语阅读全文'}</button>
+   <button class="btn primary read">${isC?'查看并精读':'双语精读摘要'}</button>
+   ${p.url?`<button class="btn orig">原文 (DOI) ↗</button>`:''}
    <button class="btn fav ${faved?'on':''}">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="${faved?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L5.2 9.7l5.4-.8L12 4z"/></svg>
     ${faved?'已收藏':'收藏'}</button></div>`;
  el.querySelector('.fav').onclick=()=>toggleFav(p.id);
  el.querySelector('.read').onclick=()=>openReader(p.id);
+ const og=el.querySelector('.orig');if(og)og.onclick=()=>window.open(p.url,'_blank');
  el.querySelectorAll('.langbar button').forEach(b=>b.onclick=()=>{cardLang[p.id]=b.dataset.l;renderFeed()});
  return el;
 }
@@ -488,12 +491,15 @@ function renderReader(){
      <button data-l="zh" class="${readerLang==='zh'?'on':''}">中文</button>
      <button data-l="en" class="${readerLang==='en'?'on':''}">EN</button>
      <button data-l="both" class="${readerLang==='both'?'on':''}">双语对照</button></div>
-    <span class="r-hint">悬停段落 → 点右侧图标记入笔记</span></div>
+    ${p.url?`<button class="btn small" id="origBtn">在出版社打开原文 ↗</button>`:''}
+   </div>
+   <div class="r-hint" style="margin-top:8px">以下为<b>完整摘要</b>的双语精读（OpenAlex 只提供摘要，正文在出版社/知网，点上方"原文"用校园网访问）。悬停段落可记入笔记。</div>
   </div>
   <div class="r-body">${bodyHTML}</div>`;
  const R=document.getElementById('reader');
  R.querySelector('.close').onclick=closeReader;
  R.querySelector('#apaCopy').onclick=()=>copy(stripTags(p.apa),'APA 引用已复制');
+ const ob=R.querySelector('#origBtn');if(ob)ob.onclick=()=>window.open(p.url,'_blank');
  R.querySelectorAll('.langbar button').forEach(b=>b.onclick=()=>{readerLang=b.dataset.l;renderReader()});
  R.querySelectorAll('.para .save').forEach(b=>b.onclick=()=>saveNote(p.id,+b.dataset.i));
  const sf=R.querySelector('.savefig');if(sf)sf.onclick=()=>saveFig(p.id);
