@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-02T01:53",
+  "generated_at": "2026-07-03T05:30",
   "source": "OpenAlex",
-  "count": 3,
+  "count": 2,
   "papers": [
     {
       "id": "oa_W7164802337",
@@ -34,46 +34,6 @@
         }
       ],
       "url": "https://doi.org/10.1177/00472875261459253"
-    },
-    {
-      "id": "oa_W7164980698",
-      "rel": 58,
-      "venue": "Repository of the University of Ljubljana (University of Ljubljana) · 2026",
-      "type": "new",
-      "zh": "Družbena in ekonomska razsežnost prostovoljstva na velikih mednarodnih športnih prireditvah",
-      "en": "Družbena in ekonomska razsežnost prostovoljstva na velikih mednarodnih športnih prireditvah",
-      "authors": "Maja Milatović",
-      "absEn": "Volunteers represent an indispensable component in the organisation and delivery of major international sport events.The organising committees must ensure the recruitment of a sufficient number of volunteers to perform diverse operational functions essential to the event delivery.While extensive research has been dedicated to volunteering, the thesis identifies a notable gap in the absence of a systematic and comprehensive analytical framework on understanding the intricate correlation between the social and economic dimension of volunteering at major international sport events.Through a case study of the European Youth Olympic Festival Maribor 2023, this thesis suggests that a comprehensive understanding of economic dimension of volunteering at major international sport event requires both, simplistic monetary valuations of the value of volunteer labour and organising costs related to volunteer deployment.Furthermore, it also acknowledges requirements under which the volunteers are asked to perform their tasks and implications volunteer engagement may have on the local economy.Through the application of social capital analysis, it evaluates the development of social capital, with particular emphasis on volunteer-specific project activities and their contribution to skill development, network building, and the creation of long-term societal value.The thesis identifies a critical deficiency in qualitative post-event volunteer evaluation, emphasising that systematic data collection could strengthen economic assessments, illuminate the economic and social value of volunteering for individuals and communities, and support stakeholders in recognising and resourcing volunteer initiatives in future events.Recognising that the economic and social dimensions of volunteering may be mutually reinforcing yet occasionally divergent, it proposes a comprehensive data-collection framework to inform event organisers' strategic planning before, during, and after an event.The establishment of a comprehensive database could provide valuable insights for organisers and other key stakeholders, enabling them to incorporate best practices and lessons learned into effective economic and social strategies for volunteer management, thereby enhancing volunteer satisfaction and fostering long-term volunteer retention.",
-      "abstract": "志愿者是主要国际体育赛事组织和交付中不可或缺的组成部分。组织委员会必须确保招募足够数量的志愿者来执行对赛事交付至关重要的各种运营职能。虽然对志愿服务进行了广泛的研究，但本文在缺乏系统和全面的分析框架来理解错综复杂的 或主要国际体育赛事中志愿服务的社会和经济维度之间的关系。通过对2023年欧洲青年奥林匹克节马里博尔的案例研究，本论文表明，全面了解主要国际体育赛事中志愿服务的经济维度，既需要对志愿者劳动力的价值进行简单的货币估值，也需要组织与志愿者部署相关的成本。此外，它还承认需要 志愿者被要求执行任务以及志愿者参与可能对当地经济产生的影响。通过社会资本分析的应用，它评估了社会资本的发展，特别强调志愿者特定的项目活动及其对技能发展，网络建设和长期社会价值创造的贡献。论文确定了定性事件后v的严重缺陷 olunteer评估，强调系统的数据收集可以加强经济评估，阐明志愿服务对个人和社区的经济和社会价值，并支持利益相关者在未来的活动中识别志愿者倡议并为其提供资源。认识到志愿服务的经济和社会层面可能是相辅相成的，但偶尔会出现分歧，它提出了一个全面的数据收集框架，以告知 组织者在活动之前、期间和之后的战略规划。建立一个全面的数据库可以为组织者和其他主要利益相关者提供宝贵的见解，使他们能够将最佳实践和经验教训纳入志愿者管理的有效经济和社会战略中，从而提高志愿者的满意度并培养长期的志愿者保留率。",
-      "why": "命中你的主题：节事/事件、社区/文化遗产。",
-      "tags": [
-        "节事/事件",
-        "社区/文化遗产"
-      ],
-      "apa": "Milatović, M. (2026). Družbena in ekonomska razsežnost prostovoljstva na velikih mednarodnih športnih prireditvah. <i>Repository of the University of Ljubljana (University of Ljubljana)</i>.",
-      "paras": [
-        {
-          "en": "Volunteers represent an indispensable component in the organisation and delivery of major international sport events.The organising committees must ensure the recruitment of a sufficient number of volunteers to perform diverse operational functions essential to the event delivery.While extensive research has been dedicated to volunteering, the thesis identifies a notable gap in the absence of a systematic and comprehensive analytical framework on understanding the intricate c",
-          "zh": "志愿者是主要国际体育赛事组织和交付中不可或缺的组成部分。组织委员会必须确保招募足够数量的志愿者来执行对赛事交付至关重要的各种运营职能。虽然对志愿服务进行了广泛的研究，但本文在缺乏系统和全面的分析框架来理解错综复杂的"
-        },
-        {
-          "en": "orrelation between the social and economic dimension of volunteering at major international sport events.Through a case study of the European Youth Olympic Festival Maribor 2023, this thesis suggests that a comprehensive understanding of economic dimension of volunteering at major international sport event requires both, simplistic monetary valuations of the value of volunteer labour and organising costs related to volunteer deployment.Furthermore, it also acknowledges requir",
-          "zh": "或主要国际体育赛事中志愿服务的社会和经济维度之间的关系。通过对2023年欧洲青年奥林匹克节马里博尔的案例研究，本论文表明，全面了解主要国际体育赛事中志愿服务的经济维度，既需要对志愿者劳动力的价值进行简单的货币估值，也需要组织与志愿者部署相关的成本。此外，它还承认需要"
-        },
-        {
-          "en": "ements under which the volunteers are asked to perform their tasks and implications volunteer engagement may have on the local economy.Through the application of social capital analysis, it evaluates the development of social capital, with particular emphasis on volunteer-specific project activities and their contribution to skill development, network building, and the creation of long-term societal value.The thesis identifies a critical deficiency in qualitative post-event v",
-          "zh": "志愿者被要求执行任务以及志愿者参与可能对当地经济产生的影响。通过社会资本分析的应用，它评估了社会资本的发展，特别强调志愿者特定的项目活动及其对技能发展，网络建设和长期社会价值创造的贡献。论文确定了定性事件后v的严重缺陷"
-        },
-        {
-          "en": "olunteer evaluation, emphasising that systematic data collection could strengthen economic assessments, illuminate the economic and social value of volunteering for individuals and communities, and support stakeholders in recognising and resourcing volunteer initiatives in future events.Recognising that the economic and social dimensions of volunteering may be mutually reinforcing yet occasionally divergent, it proposes a comprehensive data-collection framework to inform even",
-          "zh": "olunteer评估，强调系统的数据收集可以加强经济评估，阐明志愿服务对个人和社区的经济和社会价值，并支持利益相关者在未来的活动中识别志愿者倡议并为其提供资源。认识到志愿服务的经济和社会层面可能是相辅相成的，但偶尔会出现分歧，它提出了一个全面的数据收集框架，以告知"
-        },
-        {
-          "en": "t organisers' strategic planning before, during, and after an event.The establishment of a comprehensive database could provide valuable insights for organisers and other key stakeholders, enabling them to incorporate best practices and lessons learned into effective economic and social strategies for volunteer management, thereby enhancing volunteer satisfaction and fostering long-term volunteer retention.",
-          "zh": "组织者在活动之前、期间和之后的战略规划。建立一个全面的数据库可以为组织者和其他主要利益相关者提供宝贵的见解，使他们能够将最佳实践和经验教训纳入志愿者管理的有效经济和社会战略中，从而提高志愿者的满意度并培养长期的志愿者保留率。"
-        }
-      ],
-      "url": "https://openalex.org/W7164980698"
     },
     {
       "id": "oa_W7165644811",
