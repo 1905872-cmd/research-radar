@@ -1,40 +1,8 @@
 {
-  "generated_at": "2026-07-15T04:29",
+  "generated_at": "2026-07-16T04:41",
   "source": "OpenAlex",
-  "count": 2,
+  "count": 1,
   "papers": [
-    {
-      "id": "oa_W7164802337",
-      "rel": 65,
-      "venue": "Journal of Travel Research · 2026",
-      "type": "new",
-      "zh": "旅游业中的陌生人效应：以建构主义为基础的内在共创与欧代马克转型理论",
-      "en": "The Stranger Effect in Tourism: A Constructivist Grounded Theory of Inner Co-Creation and Eudaimonic Transformation",
-      "authors": "Tran Thi Tuyen",
-      "absEn": "This study develops a substantive theory explaining how brief encounters with unfamiliar fellow tourists can trigger meaningful psychological change. Drawing on constructivist grounded theory and interviews with 25 Vietnamese tourists, the study identifies a four-stage process termed the stranger effect. The process begins with safe unfamiliarity, where anonymity and the suspension of everyday roles create a liminal relational space that lowers social defensiveness. Within this context, emotional resonance emerges through rapid affective attunement, enabling strangers to recognize and respond to each other’s emotional states. This alignment facilitates inner co-creation, a reflexive dialogue through which individuals collaboratively reinterpret personal concerns and life narratives. These insights are integrated into eudaimonic transformation, expressed through cognitive reframing, self-understanding, and behavioral change. By theorizing how transformation can arise from brief travel encounters, the study reconceptualizes stranger interactions as catalysts of intersubjective meaning-making and introduces inner co-creation as a novel form of value co-creation in tourism.",
-      "abstract": "这项研究发展了一个实质性的理论，解释了与陌生游客的短暂接触如何引发有意义的心理变化。根据建构主义理论和对25名越南游客的采访，该研究确定了一个称为陌生人效应的四阶段过程。这个过程始于安全的陌生感，在这种陌生感中，匿名和日常角色的暂停创造了一个极限的关系空间，降低了社会防御能力。 在这种背景下，情感共鸣通过快速的情感调节出现，使陌生人能够识别并回应彼此的情绪状态。这种一致性促进了内在的共同创造，这是一种反思性的对话，通过这种对话，个人可以合作重新诠释个人关切和生活叙事。这些见解被整合到eudaimonic转换中，通过认知重构、自我理解和行为改变来表达。 通过理论化如何从短暂的旅行遭遇中产生转变，该研究将陌生人互动重新概念化为主体间意义创造的催化剂，并将内在共同创造引入旅游业，作为一种新的价值共同创造形式。",
-      "why": "命中你的主题：价值共创、情感互动品质。",
-      "tags": [
-        "价值共创",
-        "情感互动品质"
-      ],
-      "apa": "Tuyen, T. T. (2026). The Stranger Effect in Tourism: A Constructivist Grounded Theory of Inner Co-Creation and Eudaimonic Transformation. <i>Journal of Travel Research</i>. https://doi.org/10.1177/00472875261459253",
-      "paras": [
-        {
-          "en": "This study develops a substantive theory explaining how brief encounters with unfamiliar fellow tourists can trigger meaningful psychological change. Drawing on constructivist grounded theory and interviews with 25 Vietnamese tourists, the study identifies a four-stage process termed the stranger effect. The process begins with safe unfamiliarity, where anonymity and the suspension of everyday roles create a liminal relational space that lowers social defensiveness.",
-          "zh": "这项研究发展了一个实质性的理论，解释了与陌生游客的短暂接触如何引发有意义的心理变化。根据建构主义理论和对25名越南游客的采访，该研究确定了一个称为陌生人效应的四阶段过程。这个过程始于安全的陌生感，在这种陌生感中，匿名和日常角色的暂停创造了一个极限的关系空间，降低了社会防御能力。"
-        },
-        {
-          "en": "Within this context, emotional resonance emerges through rapid affective attunement, enabling strangers to recognize and respond to each other’s emotional states. This alignment facilitates inner co-creation, a reflexive dialogue through which individuals collaboratively reinterpret personal concerns and life narratives. These insights are integrated into eudaimonic transformation, expressed through cognitive reframing, self-understanding, and behavioral change.",
-          "zh": "在这种背景下，情感共鸣通过快速的情感调节出现，使陌生人能够识别并回应彼此的情绪状态。这种一致性促进了内在的共同创造，这是一种反思性的对话，通过这种对话，个人可以合作重新诠释个人关切和生活叙事。这些见解被整合到eudaimonic转换中，通过认知重构、自我理解和行为改变来表达。"
-        },
-        {
-          "en": "By theorizing how transformation can arise from brief travel encounters, the study reconceptualizes stranger interactions as catalysts of intersubjective meaning-making and introduces inner co-creation as a novel form of value co-creation in tourism.",
-          "zh": "通过理论化如何从短暂的旅行遭遇中产生转变，该研究将陌生人互动重新概念化为主体间意义创造的催化剂，并将内在共同创造引入旅游业，作为一种新的价值共同创造形式。"
-        }
-      ],
-      "url": "https://doi.org/10.1177/00472875261459253"
-    },
     {
       "id": "oa_W7165644811",
       "rel": 56,
