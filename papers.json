@@ -1,8 +1,43 @@
 {
-  "generated_at": "2026-07-18T04:27",
+  "generated_at": "2026-07-19T04:51",
   "source": "OpenAlex",
-  "count": 1,
+  "count": 2,
   "papers": [
+    {
+      "id": "oa_W7169608053",
+      "rel": 58,
+      "venue": "Sustainability · 2026",
+      "type": "new",
+      "zh": "从情感氛围和游客难忘的旅游体验到他们对乡村旅游目的地的忠诚度：一种混合的SEM–fsQCA方法",
+      "en": "From Affective Atmosphere and Tourists’ Memorable Tourism Experience to Their Loyalty Towards Rural Tourist Destinations: A Hybrid SEM–fsQCA Approach",
+      "authors": "Jun Yu, Shuting Tao, Jue Wang et al.",
+      "absEn": "Rural tourism strategies in underdeveloped countries have gained popularity in recent years due to rural tourism’s significance in the sustainable development of society. Thus, by integrating affective event theory in the context of rural tourism, the present study underscores the formation of tourists’ loyalty to rural tourist destinations based on the perspectives of affective atmosphere and memorable tourism experience for rural tourist destinations. Drawing on 541 valid samples from tourists to Xidi and Hongcun, which are famous rural tourist destinations in China, both SEM and fsQCA were employed to capture the linear effects and configurational pathways leading to tourists’ loyalty to rural tourist destinations. The results indicate that conviviality, therapeutics, authenticity, and playfulness significantly enhance tourists’ memorable tourism experience, which subsequently strengthens their loyalty to rural tourist destinations. Complementing these findings, the fsQCA results reveal multiple equifinal and causally asymmetrical configurations associated with high loyalty. Through the combined use of symmetric and asymmetric approaches, this study offers a more holistic understanding of the formation of destination loyalty and provides theoretically grounded and practically meaningful insights for rural tourism development and strategic destination management.",
+      "abstract": "近年来，由于乡村旅游对社会可持续发展的重要意义，不发达国家的乡村旅游战略得到了普及。因此，本研究通过将情感事件理论整合到乡村旅游的背景中，从情感氛围和乡村旅游目的地难忘的旅游体验的角度出发，强调了游客对乡村旅游目的地忠诚度的形成。 利用中国著名乡村旅游目的地西底和洪村的541个有效样本，利用SEM和fsQCA捕捉导致游客忠于乡村旅游目的地的线性效应和配置路径。 结果表明，欢乐性、治疗性、真实性和趣味性显著增强了游客难忘的旅游体验，从而增强了他们对乡村旅游目的地的忠诚度。fsQCA结果补充了这些发现，揭示了与高忠诚度相关的多种等效和因果不对称配置。 通过结合使用对称和非对称方法，本研究对目的地忠诚度的形成提供了更全面的理解，并为农村旅游发展和战略目的地管理提供了理论基础和实际意义的见解。",
+      "why": "命中你的主题：情感互动品质。",
+      "tags": [
+        "情感互动品质"
+      ],
+      "apa": "Yu, J., Tao, S., Wang, J., & Kim, H. (2026). From Affective Atmosphere and Tourists’ Memorable Tourism Experience to Their Loyalty Towards Rural Tourist Destinations: A Hybrid SEM–fsQCA Approach. <i>Sustainability, 18</i>(14), 7305–7305. https://doi.org/10.3390/su18147305",
+      "paras": [
+        {
+          "en": "Rural tourism strategies in underdeveloped countries have gained popularity in recent years due to rural tourism’s significance in the sustainable development of society. Thus, by integrating affective event theory in the context of rural tourism, the present study underscores the formation of tourists’ loyalty to rural tourist destinations based on the perspectives of affective atmosphere and memorable tourism experience for rural tourist destinations.",
+          "zh": "近年来，由于乡村旅游对社会可持续发展的重要意义，不发达国家的乡村旅游战略得到了普及。因此，本研究通过将情感事件理论整合到乡村旅游的背景中，从情感氛围和乡村旅游目的地难忘的旅游体验的角度出发，强调了游客对乡村旅游目的地忠诚度的形成。"
+        },
+        {
+          "en": "Drawing on 541 valid samples from tourists to Xidi and Hongcun, which are famous rural tourist destinations in China, both SEM and fsQCA were employed to capture the linear effects and configurational pathways leading to tourists’ loyalty to rural tourist destinations.",
+          "zh": "利用中国著名乡村旅游目的地西底和洪村的541个有效样本，利用SEM和fsQCA捕捉导致游客忠于乡村旅游目的地的线性效应和配置路径。"
+        },
+        {
+          "en": "The results indicate that conviviality, therapeutics, authenticity, and playfulness significantly enhance tourists’ memorable tourism experience, which subsequently strengthens their loyalty to rural tourist destinations. Complementing these findings, the fsQCA results reveal multiple equifinal and causally asymmetrical configurations associated with high loyalty.",
+          "zh": "结果表明，欢乐性、治疗性、真实性和趣味性显著增强了游客难忘的旅游体验，从而增强了他们对乡村旅游目的地的忠诚度。fsQCA结果补充了这些发现，揭示了与高忠诚度相关的多种等效和因果不对称配置。"
+        },
+        {
+          "en": "Through the combined use of symmetric and asymmetric approaches, this study offers a more holistic understanding of the formation of destination loyalty and provides theoretically grounded and practically meaningful insights for rural tourism development and strategic destination management.",
+          "zh": "通过结合使用对称和非对称方法，本研究对目的地忠诚度的形成提供了更全面的理解，并为农村旅游发展和战略目的地管理提供了理论基础和实际意义的见解。"
+        }
+      ],
+      "url": "https://doi.org/10.3390/su18147305"
+    },
     {
       "id": "oa_W7165644811",
       "rel": 56,
