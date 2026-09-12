@@ -1,6 +1,57 @@
 {
-  "generated_at": "2026-09-11T06:31",
+  "generated_at": "2026-09-12T06:19",
   "source": "OpenAlex",
-  "count": 0,
-  "papers": []
+  "count": 1,
+  "papers": [
+    {
+      "id": "oa_W7212085734",
+      "rel": 85,
+      "venue": "Frontiers in Virtual Reality · 2026",
+      "type": "new",
+      "zh": "非物质文化遗产保护中体现的虚拟现实人种学：羌年社区共创及其对文化知识和态度的影响",
+      "en": "Embodied virtual reality ethnography in intangible cultural heritage preservation: community co-creation of the Qiang New Year festival and its impact on cultural knowledge and attitudes",
+      "authors": "Yuan Yan, Norfarizah Mohd Bakhir",
+      "absEn": "The Qiang New Year festival, a core intangible cultural heritage (ICH) of China’s Qiang ethnic group, faces an existential crisis due to accelerated modernization and intergenerational discontinuity. This study explores a preservation pathway integrating embodied virtual reality (VR) ethnography with community-based co-design. Over 8 months of fieldwork, we developed a high-fidelity immersive VR experience rendering the ritual structure and narrative texture of the festival in a multisensory manner, enabling embodied participation through experiential learning. A quasi-experimental design (N = 200) employed a content-equivalent control: participants were randomly assigned to either a VR condition or a slideshow control, with both exposed to identical cultural content (ritual knowledge, symbolic systems, and contextual background), thereby isolating the medium’s immersion effect from content exposure. Results demonstrated significant advantages for the VR group in cultural knowledge acquisition (15-item test: VR post-test M = 12.9 vs. Control M = 9.8; p < 0.001, Cohen’s d = 1.3) and heritage attitude (5-point scale difference ≈0.7; p < 0.001, η 2 = 0.19). VR participants also reported significantly higher immersive presence and emotional engagement. Post-experiment technology acceptance model (TAM) surveys and follow-up interviews (n = 40, κ = 0.83) indicated high perceived ease of use and enjoyment even among initially skeptical participants. Partial least squares structural equation modeling (PLS-SEM) analysis (SRMR = 0.063, CR > 0.80, AVE >0.50) validated the extended TAM structure and revealed a significant indirect effect of cultural immersion on heritage support intentions via cultural identification (β = 0.24, 95% CI [0.14, 0.35]). These findings offer a testable framework for integrating embodied VR and community co-design into ICH education, highlighting the distinct roles of knowledge transmission and affective identification in fostering preservation intentions.",
+      "abstract": "羌年是中国羌族的核心非物质文化遗产（ ICH ） ，由于加速现代化和代际间断，面临着生存危机。本研究探索了一种将嵌入式虚拟现实（ VR ）民族志与基于社区的共同设计相结合的保存途径。 经过8个月的实地考察，我们开发了高保真沉浸式VR体验，以多感官的方式呈现节日的仪式结构和叙事纹理，通过体验式学习实现具体参与。 准实验设计（ N = 200 ）采用了内容等效对照：参与者被随机分配到VR条件或幻灯片对照，两者都暴露于相同的文化内容（仪式知识、符号系统和语境背景） ，从而将媒体的沉浸效应与内容暴露隔离开来。 结果表明， VR组在文化知识获取（ 15项测试： VR测试后M = 12.9 vs.对照M = 9.8 ； p < 0.001 ， Cohen's d = 1.3 ）和遗传态度（ 5分制差异≈ 0.7 ； p < 0.001 ， η 2 = 0.19 ）方面具有显著优势。VR参与者还报告了更高的沉浸感和情感参与度。 实验后技术接受模型（ TAM ）调查和随访访谈（ n = 40 ， κ = 0.83 ）表明，即使在最初持怀疑态度的参与者中，也具有很高的易用性和享受感。 偏最小二乘结构方程建模（ PLS-SEM ）分析（ SRMR = 0.063 ， CR > 0.80 ， AVE > 0.50 ）验证了扩展的TAM结构，并通过文化鉴定揭示了文化沉浸对遗产支持意图的显著间接影响（ β = 0.24 ， 95 ％ CI [0.14 ， 0.35] ）。 这些发现为将具体的VR和社区共同设计整合到ICH教育中提供了一个可测试的框架，突出了知识传播和情感识别在培养保护意图方面的不同作用。",
+      "why": "命中你的主题：价值共创、节事/事件、情感互动品质、社区/文化遗产。",
+      "tags": [
+        "价值共创",
+        "节事/事件",
+        "情感互动品质",
+        "社区/文化遗产"
+      ],
+      "apa": "Yan, Y., & Bakhir, N. M. (2026). Embodied virtual reality ethnography in intangible cultural heritage preservation: community co-creation of the Qiang New Year festival and its impact on cultural knowledge and attitudes. <i>Frontiers in Virtual Reality, 7</i>. https://doi.org/10.3389/frvir.2026.1823519",
+      "paras": [
+        {
+          "en": "The Qiang New Year festival, a core intangible cultural heritage (ICH) of China’s Qiang ethnic group, faces an existential crisis due to accelerated modernization and intergenerational discontinuity. This study explores a preservation pathway integrating embodied virtual reality (VR) ethnography with community-based co-design.",
+          "zh": "羌年是中国羌族的核心非物质文化遗产（ ICH ） ，由于加速现代化和代际间断，面临着生存危机。本研究探索了一种将嵌入式虚拟现实（ VR ）民族志与基于社区的共同设计相结合的保存途径。"
+        },
+        {
+          "en": "Over 8 months of fieldwork, we developed a high-fidelity immersive VR experience rendering the ritual structure and narrative texture of the festival in a multisensory manner, enabling embodied participation through experiential learning.",
+          "zh": "经过8个月的实地考察，我们开发了高保真沉浸式VR体验，以多感官的方式呈现节日的仪式结构和叙事纹理，通过体验式学习实现具体参与。"
+        },
+        {
+          "en": "A quasi-experimental design (N = 200) employed a content-equivalent control: participants were randomly assigned to either a VR condition or a slideshow control, with both exposed to identical cultural content (ritual knowledge, symbolic systems, and contextual background), thereby isolating the medium’s immersion effect from content exposure.",
+          "zh": "准实验设计（ N = 200 ）采用了内容等效对照：参与者被随机分配到VR条件或幻灯片对照，两者都暴露于相同的文化内容（仪式知识、符号系统和语境背景） ，从而将媒体的沉浸效应与内容暴露隔离开来。"
+        },
+        {
+          "en": "Results demonstrated significant advantages for the VR group in cultural knowledge acquisition (15-item test: VR post-test M = 12.9 vs. Control M = 9.8; p < 0.001, Cohen’s d = 1.3) and heritage attitude (5-point scale difference ≈0.7; p < 0.001, η 2 = 0.19). VR participants also reported significantly higher immersive presence and emotional engagement.",
+          "zh": "结果表明， VR组在文化知识获取（ 15项测试： VR测试后M = 12.9 vs.对照M = 9.8 ； p < 0.001 ， Cohen's d = 1.3 ）和遗传态度（ 5分制差异≈ 0.7 ； p < 0.001 ， η 2 = 0.19 ）方面具有显著优势。VR参与者还报告了更高的沉浸感和情感参与度。"
+        },
+        {
+          "en": "Post-experiment technology acceptance model (TAM) surveys and follow-up interviews (n = 40, κ = 0.83) indicated high perceived ease of use and enjoyment even among initially skeptical participants.",
+          "zh": "实验后技术接受模型（ TAM ）调查和随访访谈（ n = 40 ， κ = 0.83 ）表明，即使在最初持怀疑态度的参与者中，也具有很高的易用性和享受感。"
+        },
+        {
+          "en": "Partial least squares structural equation modeling (PLS-SEM) analysis (SRMR = 0.063, CR > 0.80, AVE >0.50) validated the extended TAM structure and revealed a significant indirect effect of cultural immersion on heritage support intentions via cultural identification (β = 0.24, 95% CI [0.14, 0.35]).",
+          "zh": "偏最小二乘结构方程建模（ PLS-SEM ）分析（ SRMR = 0.063 ， CR > 0.80 ， AVE > 0.50 ）验证了扩展的TAM结构，并通过文化鉴定揭示了文化沉浸对遗产支持意图的显著间接影响（ β = 0.24 ， 95 ％ CI [0.14 ， 0.35] ）。"
+        },
+        {
+          "en": "These findings offer a testable framework for integrating embodied VR and community co-design into ICH education, highlighting the distinct roles of knowledge transmission and affective identification in fostering preservation intentions.",
+          "zh": "这些发现为将具体的VR和社区共同设计整合到ICH教育中提供了一个可测试的框架，突出了知识传播和情感识别在培养保护意图方面的不同作用。"
+        }
+      ],
+      "url": "https://doi.org/10.3389/frvir.2026.1823519"
+    }
+  ]
 }
