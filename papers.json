@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T06:56",
+  "generated_at": "2026-09-22T06:40",
   "source": "OpenAlex",
-  "count": 1,
+  "count": 2,
   "papers": [
     {
       "id": "oa_W7212085734",
@@ -52,6 +52,33 @@
         }
       ],
       "url": "https://doi.org/10.3389/frvir.2026.1823519"
+    },
+    {
+      "id": "oa_W7213652387",
+      "rel": 60,
+      "venue": "Information Management and Business Review · 2026",
+      "type": "new",
+      "zh": "仪器的开发和试点验证测量Z世代对节日活动的行为意图",
+      "en": "Development and Pilot Validation of an Instrument Measuring Generation Z's Behavioral Intention Towards Festival Events",
+      "authors": "Ayu Rohaidah Ghazali, Wan Soraya Wan Abdul Ghani, Nurakmal Ramli et al.",
+      "absEn": "Generation Z has become an important consumer segment in the festival industry; therefore, there is a need to develop a reliable instrument to measure the factors influencing their behavioral intention towards festival events. The study aimed to design and conduct a preliminary validation of a measurement instrument comprising four constructs: media influence, social interaction, festival image, and behavioral intention. A quantitative pilot study was conducted with 36 Generation Z respondents, and the data were analyzed using descriptive statistics and Cronbach’s Alpha. The results revealed satisfactory internal consistency for all constructs (? = 0.864-0.933), indicating that the proposed instrument is reliable and suitable for future large-scale empirical investigations. The validated instrument provides a methodological base for future research on Generation Z festival behavior.",
+      "abstract": "Z世代已成为节日行业的重要消费群体，因此需要开发一种可靠的工具来衡量影响他们对节日活动的行为意图的因素。该研究旨在设计和进行测量仪器的初步验证，该仪器包括四个结构：媒体影响、社交互动、节日形象和行为意图。 对36名Z世代受访者进行了定量试点研究，并使用描述性统计数据和Cronbach's Alpha对数据进行分析。结果显示所有构建体的内部一致性令人满意（ ？ = 0.864-0.933 ） ，表明所提出的仪器是可靠的，适用于未来的大规模实证研究。经过验证的仪器为未来Z世代节日行为的研究提供了方法论基础。",
+      "why": "命中你的主题：节事/事件。",
+      "tags": [
+        "节事/事件"
+      ],
+      "apa": "Ghazali, A. R., Ghani, W. S. W. A., Ramli, N., Rashid, N. M., Asnawi, N. H., Mohamad, S., & Nazer, M. H. M. (2026). Development and Pilot Validation of an Instrument Measuring Generation Z's Behavioral Intention Towards Festival Events. <i>Information Management and Business Review, 18</i>(3(I)), 83–94. https://doi.org/10.22610/imbr.v18i3(i).4895",
+      "paras": [
+        {
+          "en": "Generation Z has become an important consumer segment in the festival industry; therefore, there is a need to develop a reliable instrument to measure the factors influencing their behavioral intention towards festival events. The study aimed to design and conduct a preliminary validation of a measurement instrument comprising four constructs: media influence, social interaction, festival image, and behavioral intention.",
+          "zh": "Z世代已成为节日行业的重要消费群体，因此需要开发一种可靠的工具来衡量影响他们对节日活动的行为意图的因素。该研究旨在设计和进行测量仪器的初步验证，该仪器包括四个结构：媒体影响、社交互动、节日形象和行为意图。"
+        },
+        {
+          "en": "A quantitative pilot study was conducted with 36 Generation Z respondents, and the data were analyzed using descriptive statistics and Cronbach’s Alpha. The results revealed satisfactory internal consistency for all constructs (? = 0.864-0.933), indicating that the proposed instrument is reliable and suitable for future large-scale empirical investigations. The validated instrument provides a methodological base for future research on Generation Z festival behavior.",
+          "zh": "对36名Z世代受访者进行了定量试点研究，并使用描述性统计数据和Cronbach's Alpha对数据进行分析。结果显示所有构建体的内部一致性令人满意（ ？ = 0.864-0.933 ） ，表明所提出的仪器是可靠的，适用于未来的大规模实证研究。经过验证的仪器为未来Z世代节日行为的研究提供了方法论基础。"
+        }
+      ],
+      "url": "https://doi.org/10.22610/imbr.v18i3(i).4895"
     }
   ]
 }
