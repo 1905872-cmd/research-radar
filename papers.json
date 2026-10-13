@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-12T07:52",
+  "generated_at": "2026-10-13T08:17",
   "source": "OpenAlex",
-  "count": 1,
+  "count": 2,
   "papers": [
     {
       "id": "oa_W7213652387",
@@ -29,6 +29,41 @@
         }
       ],
       "url": "https://doi.org/10.22610/imbr.v18i3(i).4895"
+    },
+    {
+      "id": "oa_W7221318384",
+      "rel": 56,
+      "venue": "Scientific Reports · 2026",
+      "type": "new",
+      "zh": "揭示文化遗产治理中社区赋权的制度和心理途径",
+      "en": "Unpacking the institutional and psychological pathways of community empowerment in cultural heritage governance",
+      "authors": "Yujin Liu, Wei Li, Peng Cui et al.",
+      "absEn": "Abstract Community empowerment is widely recognized as an effective strategy for improving resident satisfaction in the governance of cultural heritage sites. However, existing studies focus primarily on institutional design and do not systematically explore the underlying psychological conversion mechanisms. To fill this gap, this paper selects Baisha Ancient Town and Xijiang Qianhu Miao Village as cases, uses Structural Equation Modeling (SEM) to analyze data from 775 completed questionnaires, and explores the mediating effect of empowerment on residents’ satisfaction through cultural pride and community resilience. The results show that community empowerment not only directly promotes satisfaction, but also has significant indirect effects through emotional and institutional pathways, and the two show differences in different communities. Through unpacking the “institutional empowerment-psychological response-satisfaction feedback” process, this study contributes to theory by clarifying the synergistic roles of emotional and structural mechanisms and their contextual variations. Practically, it provides a governance framework that helps policymakers calibrate empowerment strategies to community development stages, thereby promoting both cultural continuity and socio-economic sustainability.",
+      "abstract": "抽象社区赋权被广泛认为是提高居民对文化遗产治理满意度的有效策略。然而，现有的研究主要集中在制度设计上，并没有系统地探索潜在的心理转换机制。 为填补这一空白，本文选取白沙古镇和西江前湖苗村为例，利用结构方程建模（ SEM ）对775份已填写问卷的数据进行分析，探讨通过文化自豪感和社区韧性赋能对居民满意度的中介作用。 结果表明，社区赋权不仅直接促进了满意度，而且通过情感和制度途径产生了显著的间接影响，两者在不同社区中表现出差异。通过解开“制度授权-心理反应-满意度反馈”过程，本研究通过阐明情感和结构机制的协同作用及其背景变化为理论做出了贡献。 实际上，它提供了一个治理框架，帮助政策制定者根据社区发展阶段调整赋权战略，从而促进文化连续性和社会经济可持续性。",
+      "why": "命中你的主题：社区/文化遗产。",
+      "tags": [
+        "社区/文化遗产"
+      ],
+      "apa": "Liu, Y., Li, W., Cui, P., Ai, Q., Fan, Q., & Yuan, J. (2026). Unpacking the institutional and psychological pathways of community empowerment in cultural heritage governance. <i>Scientific Reports</i>. https://doi.org/10.1038/s41598-026-72806-2",
+      "paras": [
+        {
+          "en": "Abstract Community empowerment is widely recognized as an effective strategy for improving resident satisfaction in the governance of cultural heritage sites. However, existing studies focus primarily on institutional design and do not systematically explore the underlying psychological conversion mechanisms.",
+          "zh": "抽象社区赋权被广泛认为是提高居民对文化遗产治理满意度的有效策略。然而，现有的研究主要集中在制度设计上，并没有系统地探索潜在的心理转换机制。"
+        },
+        {
+          "en": "To fill this gap, this paper selects Baisha Ancient Town and Xijiang Qianhu Miao Village as cases, uses Structural Equation Modeling (SEM) to analyze data from 775 completed questionnaires, and explores the mediating effect of empowerment on residents’ satisfaction through cultural pride and community resilience.",
+          "zh": "为填补这一空白，本文选取白沙古镇和西江前湖苗村为例，利用结构方程建模（ SEM ）对775份已填写问卷的数据进行分析，探讨通过文化自豪感和社区韧性赋能对居民满意度的中介作用。"
+        },
+        {
+          "en": "The results show that community empowerment not only directly promotes satisfaction, but also has significant indirect effects through emotional and institutional pathways, and the two show differences in different communities. Through unpacking the “institutional empowerment-psychological response-satisfaction feedback” process, this study contributes to theory by clarifying the synergistic roles of emotional and structural mechanisms and their contextual variations.",
+          "zh": "结果表明，社区赋权不仅直接促进了满意度，而且通过情感和制度途径产生了显著的间接影响，两者在不同社区中表现出差异。通过解开“制度授权-心理反应-满意度反馈”过程，本研究通过阐明情感和结构机制的协同作用及其背景变化为理论做出了贡献。"
+        },
+        {
+          "en": "Practically, it provides a governance framework that helps policymakers calibrate empowerment strategies to community development stages, thereby promoting both cultural continuity and socio-economic sustainability.",
+          "zh": "实际上，它提供了一个治理框架，帮助政策制定者根据社区发展阶段调整赋权战略，从而促进文化连续性和社会经济可持续性。"
+        }
+      ],
+      "url": "https://doi.org/10.1038/s41598-026-72806-2"
     }
   ]
 }
