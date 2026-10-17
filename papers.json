@@ -1,8 +1,43 @@
 {
-  "generated_at": "2026-10-16T06:14",
+  "generated_at": "2026-10-17T05:59",
   "source": "OpenAlex",
-  "count": 1,
+  "count": 2,
   "papers": [
+    {
+      "id": "oa_W7221816788",
+      "rel": 60,
+      "venue": "Communication & Sport · 2026",
+      "type": "new",
+      "zh": "超越终点线：从观众的角度看城市马拉松的价值共创与价值共毁",
+      "en": "Beyond the Finish Line: Value Co-Creation and Value Co-Destruction in City Marathons From a Spectator Perspective",
+      "authors": "Ruowei Zhang, Shuhua Zhou",
+      "absEn": "City marathons are often positioned as tools for urban branding and socioeconomic development, yet their value is negotiated through stakeholder experiences. This study investigates the 2025 Wuhan Marathon as a communication ecosystem where value co-creation and value co-destruction coexist. Drawing upon value co-creation, value co-destruction, and sport event research, this study examines how spectators’ event-related engagement and perceived disruptions are associated with event satisfaction, perceived city image, and perceived socioeconomic impact. Survey data from 431 spectators were analyzed using regression-based moderated mediation models. Results showed that value co-creation was positively associated with event satisfaction and indirectly with more favorable evaluations of Wuhan’s city image and the marathon’s socioeconomic impact. In contrast, value co-destruction was negatively associated with event satisfaction and indirectly with less favorable urban evaluations. Spectator identity did not significantly moderate these indirect associations. The findings position spectators as interpretive actors whose event-level experiences were associated with how favorably they appraised the very claims — city image, social value, economic worth — that anchor official accounts of marathon success.",
+      "abstract": "城市马拉松通常被定位为城市品牌和社会经济发展的工具，但其价值是通过利益相关者的经验进行谈判的。本研究考察了2025年武汉马拉松作为价值共创与价值共毁共存的沟通生态系统。 本研究借鉴了价值共创、价值共毁和体育赛事研究，考察了观众与赛事相关的参与度和感知中断与赛事满意度、感知城市形象和感知社会经济影响之间的关系。使用基于回归的调节调解模型分析来自431名观众的调查数据。 结果表明，价值共创与赛事满意度呈正相关，间接与对武汉城市形象和马拉松社会经济影响的更好评价呈正相关。相比之下，价值共毁与事件满意度呈负相关，与较差的城市评价呈间接相关。观众身份并未显著减缓这些间接关联。 研究结果将观众定位为具有解释性的演员，其活动层面的经历与他们对马拉松成功官方描述的城市形象、社会价值、经济价值等主张的评价程度有关。",
+      "why": "命中你的主题：价值共创。",
+      "tags": [
+        "价值共创"
+      ],
+      "apa": "Zhang, R., & Zhou, S. (2026). Beyond the Finish Line: Value Co-Creation and Value Co-Destruction in City Marathons From a Spectator Perspective. <i>Communication & Sport</i>. https://doi.org/10.1177/21674795261498188",
+      "paras": [
+        {
+          "en": "City marathons are often positioned as tools for urban branding and socioeconomic development, yet their value is negotiated through stakeholder experiences. This study investigates the 2025 Wuhan Marathon as a communication ecosystem where value co-creation and value co-destruction coexist.",
+          "zh": "城市马拉松通常被定位为城市品牌和社会经济发展的工具，但其价值是通过利益相关者的经验进行谈判的。本研究考察了2025年武汉马拉松作为价值共创与价值共毁共存的沟通生态系统。"
+        },
+        {
+          "en": "Drawing upon value co-creation, value co-destruction, and sport event research, this study examines how spectators’ event-related engagement and perceived disruptions are associated with event satisfaction, perceived city image, and perceived socioeconomic impact. Survey data from 431 spectators were analyzed using regression-based moderated mediation models.",
+          "zh": "本研究借鉴了价值共创、价值共毁和体育赛事研究，考察了观众与赛事相关的参与度和感知中断与赛事满意度、感知城市形象和感知社会经济影响之间的关系。使用基于回归的调节调解模型分析来自431名观众的调查数据。"
+        },
+        {
+          "en": "Results showed that value co-creation was positively associated with event satisfaction and indirectly with more favorable evaluations of Wuhan’s city image and the marathon’s socioeconomic impact. In contrast, value co-destruction was negatively associated with event satisfaction and indirectly with less favorable urban evaluations. Spectator identity did not significantly moderate these indirect associations.",
+          "zh": "结果表明，价值共创与赛事满意度呈正相关，间接与对武汉城市形象和马拉松社会经济影响的更好评价呈正相关。相比之下，价值共毁与事件满意度呈负相关，与较差的城市评价呈间接相关。观众身份并未显著减缓这些间接关联。"
+        },
+        {
+          "en": "The findings position spectators as interpretive actors whose event-level experiences were associated with how favorably they appraised the very claims — city image, social value, economic worth — that anchor official accounts of marathon success.",
+          "zh": "研究结果将观众定位为具有解释性的演员，其活动层面的经历与他们对马拉松成功官方描述的城市形象、社会价值、经济价值等主张的评价程度有关。"
+        }
+      ],
+      "url": "https://doi.org/10.1177/21674795261498188"
+    },
     {
       "id": "oa_W7221318384",
       "rel": 56,
