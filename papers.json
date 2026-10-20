@@ -1,8 +1,56 @@
 {
-  "generated_at": "2026-10-19T06:39",
+  "generated_at": "2026-10-20T06:26",
   "source": "OpenAlex",
-  "count": 2,
+  "count": 3,
   "papers": [
+    {
+      "id": "oa_W7222436884",
+      "rel": 64,
+      "venue": "International Journal of Education, Research, and Innovation Perspectives · 2026",
+      "type": "new",
+      "zh": "当伤疤成为艺术：在Laak国立高中冠军表演者中通过Indayog Sa Kahimunan音乐节重生达沃德奥罗的历史灰烬作为旅游资产",
+      "en": "When Scars Become Art: Rebirthing the Historical Ashes as Tourism Asset of Davao De Oro through Indayog Sa Kahimunan Festival among Laak National High School Grand Champion Performers",
+      "authors": "Dave Florenz Paul Santos, Jayson Alas",
+      "absEn": "The engagement of youth creative teams in municipal cultural festivals serves as a vital mechanism for communities to articulate their collective identity, safeguard intangible heritage, and advance local destination branding. Accordingly, the student performers of the SalinLahi Performing Arts Guild from Laak National High School represented the province of Davao de Oro and secured the grand championship in the Indayog sa Kadalanan during the Kahimunan Festival. Grounded in a descriptive phenomenological framework, this study investigated the lived experiences, creative methodologies, cultural representations, and perceived tourism contributions of the student performers as they translated historical adversity into a competitive performing art. Utilizing purposive sampling, ten student-performers who directly participated in the winning contingent were selected, and data were gathered through in-depth, semi-structured interviews analyzed via reflexive thematic analysis. The findings revealed that the participants' narratives were encapsulated across several core domains: conceptualizing local historical struggles—such as natural disasters, socio-environmental disruptions, and community tragedies—through \"Echoes of the Past,\" executing narrative progression via \"Symbolic Choreography,\" and maintaining ethical standards through \"Reverential Portrayal\". Furthermore, the students navigated rigorous physiological and psychological demands alongside resource constraints by embodying the core Filipino value of \"Bayanihan\". Winning the grand championship profoundly altered their self-perception, cultivating a strengthened cultural identity wherein they embraced their roles as active \"Stewards of Culture\" who recognized that \"A Story Told is a Win\". Moreover, the performers evaluated their championship showcase as a catalyst that enhanced Laak's tourism appeal and presented the Kahimunan Festival in a renewed light as a platform for meaningful narrative expression. Ultimately, the study underscores that the journey from historical trauma to a recognized tourism asset is a multifaceted endeavor requiring institutional support, rigorous cultural archiving, historical research, youth empowerment, and sustainable tourism monitoring.",
+      "abstract": "青年创意团队参与市政文化节是社区表达其集体身份、保护非物质遗产和推进当地目的地品牌的重要机制。因此，来自Laak国立高中的SalinLahi表演艺术协会的学生表演者代表达沃德奥罗省，并在Kahimunan音乐节期间在Indayog sa Kadalanan获得了总冠军。 本研究以描述性现象学框架为基础，调查了学生表演者的生活经历、创造性方法、文化表征和感知的旅游贡献，因为他们将历史逆境转化为有竞争力的表演艺术。 采用有针对性的抽样，选取直接参与获奖队伍的10名学生表现者，通过反思性主题分析，通过深入、半结构化的访谈收集数据。 研究结果表明，参与者的叙事被封装在几个核心领域：通过“过去的回声”概念化当地的历史斗争，如自然灾害、社会环境破坏和社区悲剧，通过“象征性编舞”执行叙事进程，并通过“虔诚的写照”保持道德标准。 此外，学生们通过体现“Bayanihan”的核心菲律宾价值观，在资源限制的同时驾驭了严格的生理和心理需求。赢得总冠军深刻地改变了他们的自我认知，培养了一种强化的文化认同，他们接受了自己作为积极的“文化管家”的角色，他们认识到“讲故事就是赢”。 此外，表演者将他们的冠军展示视为增强Laak旅游吸引力的催化剂，并将Kahimunan节重新视为有意义的叙事表达平台。 最终，该研究强调，从历史创伤到公认的旅游资产的旅程是一项多方面的努力，需要机构支持、严格的文化归档、历史研究、青年赋权和可持续旅游监测。",
+      "why": "命中你的主题：节事/事件、社区/文化遗产。",
+      "tags": [
+        "节事/事件",
+        "社区/文化遗产"
+      ],
+      "apa": "Santos, D. F. P., & Alas, J. (2026). When Scars Become Art: Rebirthing the Historical Ashes as Tourism Asset of Davao De Oro through Indayog Sa Kahimunan Festival among Laak National High School Grand Champion Performers. <i>International Journal of Education, Research, and Innovation Perspectives</i>. https://doi.org/10.5281/zenodo.23415819",
+      "paras": [
+        {
+          "en": "The engagement of youth creative teams in municipal cultural festivals serves as a vital mechanism for communities to articulate their collective identity, safeguard intangible heritage, and advance local destination branding. Accordingly, the student performers of the SalinLahi Performing Arts Guild from Laak National High School represented the province of Davao de Oro and secured the grand championship in the Indayog sa Kadalanan during the Kahimunan Festival.",
+          "zh": "青年创意团队参与市政文化节是社区表达其集体身份、保护非物质遗产和推进当地目的地品牌的重要机制。因此，来自Laak国立高中的SalinLahi表演艺术协会的学生表演者代表达沃德奥罗省，并在Kahimunan音乐节期间在Indayog sa Kadalanan获得了总冠军。"
+        },
+        {
+          "en": "Grounded in a descriptive phenomenological framework, this study investigated the lived experiences, creative methodologies, cultural representations, and perceived tourism contributions of the student performers as they translated historical adversity into a competitive performing art.",
+          "zh": "本研究以描述性现象学框架为基础，调查了学生表演者的生活经历、创造性方法、文化表征和感知的旅游贡献，因为他们将历史逆境转化为有竞争力的表演艺术。"
+        },
+        {
+          "en": "Utilizing purposive sampling, ten student-performers who directly participated in the winning contingent were selected, and data were gathered through in-depth, semi-structured interviews analyzed via reflexive thematic analysis.",
+          "zh": "采用有针对性的抽样，选取直接参与获奖队伍的10名学生表现者，通过反思性主题分析，通过深入、半结构化的访谈收集数据。"
+        },
+        {
+          "en": "The findings revealed that the participants' narratives were encapsulated across several core domains: conceptualizing local historical struggles—such as natural disasters, socio-environmental disruptions, and community tragedies—through \"Echoes of the Past,\" executing narrative progression via \"Symbolic Choreography,\" and maintaining ethical standards through \"Reverential Portrayal\".",
+          "zh": "研究结果表明，参与者的叙事被封装在几个核心领域：通过“过去的回声”概念化当地的历史斗争，如自然灾害、社会环境破坏和社区悲剧，通过“象征性编舞”执行叙事进程，并通过“虔诚的写照”保持道德标准。"
+        },
+        {
+          "en": "Furthermore, the students navigated rigorous physiological and psychological demands alongside resource constraints by embodying the core Filipino value of \"Bayanihan\". Winning the grand championship profoundly altered their self-perception, cultivating a strengthened cultural identity wherein they embraced their roles as active \"Stewards of Culture\" who recognized that \"A Story Told is a Win\".",
+          "zh": "此外，学生们通过体现“Bayanihan”的核心菲律宾价值观，在资源限制的同时驾驭了严格的生理和心理需求。赢得总冠军深刻地改变了他们的自我认知，培养了一种强化的文化认同，他们接受了自己作为积极的“文化管家”的角色，他们认识到“讲故事就是赢”。"
+        },
+        {
+          "en": "Moreover, the performers evaluated their championship showcase as a catalyst that enhanced Laak's tourism appeal and presented the Kahimunan Festival in a renewed light as a platform for meaningful narrative expression.",
+          "zh": "此外，表演者将他们的冠军展示视为增强Laak旅游吸引力的催化剂，并将Kahimunan节重新视为有意义的叙事表达平台。"
+        },
+        {
+          "en": "Ultimately, the study underscores that the journey from historical trauma to a recognized tourism asset is a multifaceted endeavor requiring institutional support, rigorous cultural archiving, historical research, youth empowerment, and sustainable tourism monitoring.",
+          "zh": "最终，该研究强调，从历史创伤到公认的旅游资产的旅程是一项多方面的努力，需要机构支持、严格的文化归档、历史研究、青年赋权和可持续旅游监测。"
+        }
+      ],
+      "url": "https://doi.org/10.5281/zenodo.23415819"
+    },
     {
       "id": "oa_W7221816788",
       "rel": 60,
