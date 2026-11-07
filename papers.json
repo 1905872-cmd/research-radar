@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T08:24",
+  "generated_at": "2026-11-07T07:40",
   "source": "OpenAlex",
-  "count": 4,
+  "count": 5,
   "papers": [
     {
       "id": "oa_W7222436884",
@@ -85,6 +85,41 @@
         }
       ],
       "url": "https://doi.org/10.1177/21674795261498188"
+    },
+    {
+      "id": "oa_W7225347191",
+      "rel": 56,
+      "venue": "Frontiers in Sustainable Food Systems · 2026",
+      "type": "new",
+      "zh": "通过美食回忆探索当代宾夕法尼亚州荷兰美食文化中的非物质文化遗产",
+      "en": "Exploring intangible cultural heritage in contemporary Pennsylvania Dutch food culture through food memories",
+      "authors": "Madisen P. Plunkert, HELYA SEHAT, Max O. Stephenson Jr. et al.",
+      "absEn": "Introduction Food memories provide an important yet underexamined means through which communities articulate, transmit, and negotiate intangible cultural heritage, particularly when commercial heritagization privileges selected foods and cultural representations. This study examines how contemporary Pennsylvania Dutch cultural insiders construct food memories and what those narratives reveal about the maintenance and transmission of Pennsylvania Dutch food culture. Methods Using a narrative-based approach, we analyzed semi-structured interviews with seven cultural insiders, including chefs, home cooks, food-business owners, and cookbook authors, from Berks and York counties in Pennsylvania. We analyzed our interviewees’ narratives using a hybrid deductive–inductive approach guided by an adapted framework for analyzing food memories across four dimensions: embodied knowledge, emotions, people and communality, and evocative settings. Results Our participants’ narratives suggested that food-related knowledge is passed on through experience, family connections, and regional and seasonal food practices. Their food memories also suggested that assimilation, commodification, and heritagization processes can marginalize certain food practices and meanings important to community members. Discussion We contend that food memories may be understood as examples of narratively constructed intangible heritage through which culturally meaningful knowledge, skills, values, and practices become visible. Empirically, this article contributes to the study of food memories by providing insider perspectives concerning an underexamined regional food culture and by adapting a food memory framework for use in narrative interviewing.",
+      "abstract": "引言食物记忆提供了一种重要但未得到充分考虑的手段，通过这种手段，社区可以表达、传播和谈判非物质文化遗产，特别是当商业遗产化为选定的食物和文化代表提供特权时。本研究探讨了当代宾夕法尼亚州荷兰文化内部人士如何构建美食记忆，以及这些叙述揭示了宾夕法尼亚州荷兰饮食文化的维护和传播。 方法使用基于叙事的方法，我们分析了对宾夕法尼亚州伯克郡和约克郡的七位文化内幕人士（包括厨师、家庭厨师、食品企业主和烹饪书作者）的半结构化访谈。我们使用混合演绎归纳法分析了受访者的叙述，该方法以适应性的框架为指导，用于分析四个维度的食物记忆：具体的知识、情感、人和公共性以及令人回味的环境。 结果我们的参与者的叙述表明，与食品相关的知识是通过经验、家庭关系以及区域和季节性食品实践来传授的。他们的食物记忆还表明，同化、商品化和遗传化过程可能会使某些对社区成员重要的食物实践和意义边缘化。 讨论我们认为，食物记忆可以被理解为叙事性构建的非物质遗产的例子，通过这些例子，具有文化意义的知识、技能、价值观和实践变得可见。根据经验，本文通过提供有关未被充分考虑的地区饮食文化的内部观点，并通过调整用于叙事采访的食物记忆框架，为食物记忆的研究做出了贡献。",
+      "why": "命中你的主题：社区/文化遗产。",
+      "tags": [
+        "社区/文化遗产"
+      ],
+      "apa": "Plunkert, M. P., SEHAT, H., Jr., M. O. S., & Niewolny, K. L. (2026). Exploring intangible cultural heritage in contemporary Pennsylvania Dutch food culture through food memories. <i>Frontiers in Sustainable Food Systems, 10</i>. https://doi.org/10.3389/fsufs.2026.1931242",
+      "paras": [
+        {
+          "en": "Introduction Food memories provide an important yet underexamined means through which communities articulate, transmit, and negotiate intangible cultural heritage, particularly when commercial heritagization privileges selected foods and cultural representations. This study examines how contemporary Pennsylvania Dutch cultural insiders construct food memories and what those narratives reveal about the maintenance and transmission of Pennsylvania Dutch food culture.",
+          "zh": "引言食物记忆提供了一种重要但未得到充分考虑的手段，通过这种手段，社区可以表达、传播和谈判非物质文化遗产，特别是当商业遗产化为选定的食物和文化代表提供特权时。本研究探讨了当代宾夕法尼亚州荷兰文化内部人士如何构建美食记忆，以及这些叙述揭示了宾夕法尼亚州荷兰饮食文化的维护和传播。"
+        },
+        {
+          "en": "Methods Using a narrative-based approach, we analyzed semi-structured interviews with seven cultural insiders, including chefs, home cooks, food-business owners, and cookbook authors, from Berks and York counties in Pennsylvania. We analyzed our interviewees’ narratives using a hybrid deductive–inductive approach guided by an adapted framework for analyzing food memories across four dimensions: embodied knowledge, emotions, people and communality, and evocative settings.",
+          "zh": "方法使用基于叙事的方法，我们分析了对宾夕法尼亚州伯克郡和约克郡的七位文化内幕人士（包括厨师、家庭厨师、食品企业主和烹饪书作者）的半结构化访谈。我们使用混合演绎归纳法分析了受访者的叙述，该方法以适应性的框架为指导，用于分析四个维度的食物记忆：具体的知识、情感、人和公共性以及令人回味的环境。"
+        },
+        {
+          "en": "Results Our participants’ narratives suggested that food-related knowledge is passed on through experience, family connections, and regional and seasonal food practices. Their food memories also suggested that assimilation, commodification, and heritagization processes can marginalize certain food practices and meanings important to community members.",
+          "zh": "结果我们的参与者的叙述表明，与食品相关的知识是通过经验、家庭关系以及区域和季节性食品实践来传授的。他们的食物记忆还表明，同化、商品化和遗传化过程可能会使某些对社区成员重要的食物实践和意义边缘化。"
+        },
+        {
+          "en": "Discussion We contend that food memories may be understood as examples of narratively constructed intangible heritage through which culturally meaningful knowledge, skills, values, and practices become visible. Empirically, this article contributes to the study of food memories by providing insider perspectives concerning an underexamined regional food culture and by adapting a food memory framework for use in narrative interviewing.",
+          "zh": "讨论我们认为，食物记忆可以被理解为叙事性构建的非物质遗产的例子，通过这些例子，具有文化意义的知识、技能、价值观和实践变得可见。根据经验，本文通过提供有关未被充分考虑的地区饮食文化的内部观点，并通过调整用于叙事采访的食物记忆框架，为食物记忆的研究做出了贡献。"
+        }
+      ],
+      "url": "https://doi.org/10.3389/fsufs.2026.1931242"
     },
     {
       "id": "oa_W7221318384",
