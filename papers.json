@@ -1,8 +1,83 @@
 {
-  "generated_at": "2026-11-27T10:01",
+  "generated_at": "2026-11-28T09:18",
   "source": "OpenAlex",
-  "count": 2,
+  "count": 4,
   "papers": [
+    {
+      "id": "oa_W7220391192",
+      "rel": 64,
+      "venue": "GeoJournal of Tourism and Geosites · 2026",
+      "type": "new",
+      "zh": "美食节中感知到的文化表现和行为意向：对地方认同感和文化遗产意识的模糊集定性比较分析",
+      "en": "PERCEIVED CULTURAL PERFORMANCE AND BEHAVIORAL INTENTIONS IN GASTRONOMY FESTIVALS: A FUZZY-SET QUALITATIVE COMPARATIVE ANALYSIS OF LOCAL IDENTITY AND HERITAGE AWARENESS",
+      "authors": "Oğuz Taşpınar, Emre MOUMİN, Yasin SOYLU et al.",
+      "absEn": "The study aims to understand the concept of perceived cultural performance at gastronomy festivals, along with its coupling with local identity and cultural heritage to influence the behavioral intentions of visitors. For data collection purposes, a structured survey instrument was employed to obtain data from 544 domestic and foreign visitors who visited the two major gastronomy festivals, namely GastroANTEP in Gaziantep, Türkiye, and the Budapest Wine and Gourmet Festival in Hungary. In other words, the settings used here provide a cross-cultural foundation to examine the issue of gastronomic heritage in different kinds of festivals. Configurational design approach is used to avoid assuming a specific path towards the accomplishment of each outcome. Data have been analyzed using fuzzy-set Qualitative Comparative Analysis (fsQCA), which is an asymmetric approach for finding alternative combinations of conditions resulting in the same outcome. High behavioral intention and high perceived cultural performance are both considered to be focal outcomes of the configurational analysis. Six sufficient configurations have been found for behavioral intention; among them, the top three configurations show consistencies ranging from 0.962 to 0.969 and coverages ranging from 0.844 to 0.874, implying that there are alternative combinations of conditions that lead to high behavioral intention through the interplay of perceptions about cultural performance, local identity, and cultural heritage. Five configurations have been found in case of high perceived cultural performance, where the overall solution shows coverage value of 0.975 and consistency value of 0.905. Equifinality has thus been demonstrated, and none of the individual condition has been found to explain visitors' responses. The study adds to the literature in the domain of gastronomy and tourism by operationalizing the theory of cultural performance.",
+      "abstract": "本研究旨在了解美食节中感知文化表现的概念，以及其与地方认同和文化遗产的耦合如何影响游客的行为意向。 为了收集数据，我们采用了结构化调查工具，从544名参观过两大美食节的国内外游客那里收集了数据，这两个美食节分别是土耳其加济安泰普的GastroANTEP美食节和匈牙利的布达佩斯葡萄酒与美食节。换言之，此处所采用的背景为研究不同类型节日中的美食遗产问题提供了跨文化基础。 配置设计方法用于避免假定实现每个结果的具体路径。我们使用模糊集定性比较分析（fsQCA）对数据进行了分析，这是一种非对称方法，用于寻找导致相同结果的条件替代组合。高行为意向和高感知文化绩效都被认为是配置分析的重点结果。 我们找到了六种足以解释行为意向的配置；其中，前三种配置的一致性介于0.962至0.969之间，覆盖率介于0.844至0.874之间，这表明存在多种条件组合，通过对文化表现、地方认同和文化遗产的感知相互作用，可以产生较高的行为意向。 在感知文化表现较高的情形下，发现了五种配置，其中整体解决方案的覆盖值为 0.975，一致性值为 0.905。因此，等终性得到了证实，并且没有发现任何单个条件可以解释游客的反应。本研究通过将文化表演理论付诸实践，为美食与旅游领域的文献增添了新内容。",
+      "why": "命中你的主题：节事/事件、社区/文化遗产。",
+      "tags": [
+        "节事/事件",
+        "社区/文化遗产"
+      ],
+      "apa": "Taşpınar, O., MOUMİN, E., SOYLU, Y., & SOYLU, A. G. (2026). PERCEIVED CULTURAL PERFORMANCE AND BEHAVIORAL INTENTIONS IN GASTRONOMY FESTIVALS: A FUZZY-SET QUALITATIVE COMPARATIVE ANALYSIS OF LOCAL IDENTITY AND HERITAGE AWARENESS. <i>GeoJournal of Tourism and Geosites, 68</i>(4), 2685–2693. https://doi.org/10.30892/gtg.68405-1886",
+      "paras": [
+        {
+          "en": "The study aims to understand the concept of perceived cultural performance at gastronomy festivals, along with its coupling with local identity and cultural heritage to influence the behavioral intentions of visitors.",
+          "zh": "本研究旨在了解美食节中感知文化表现的概念，以及其与地方认同和文化遗产的耦合如何影响游客的行为意向。"
+        },
+        {
+          "en": "For data collection purposes, a structured survey instrument was employed to obtain data from 544 domestic and foreign visitors who visited the two major gastronomy festivals, namely GastroANTEP in Gaziantep, Türkiye, and the Budapest Wine and Gourmet Festival in Hungary. In other words, the settings used here provide a cross-cultural foundation to examine the issue of gastronomic heritage in different kinds of festivals.",
+          "zh": "为了收集数据，我们采用了结构化调查工具，从544名参观过两大美食节的国内外游客那里收集了数据，这两个美食节分别是土耳其加济安泰普的GastroANTEP美食节和匈牙利的布达佩斯葡萄酒与美食节。换言之，此处所采用的背景为研究不同类型节日中的美食遗产问题提供了跨文化基础。"
+        },
+        {
+          "en": "Configurational design approach is used to avoid assuming a specific path towards the accomplishment of each outcome. Data have been analyzed using fuzzy-set Qualitative Comparative Analysis (fsQCA), which is an asymmetric approach for finding alternative combinations of conditions resulting in the same outcome. High behavioral intention and high perceived cultural performance are both considered to be focal outcomes of the configurational analysis.",
+          "zh": "配置设计方法用于避免假定实现每个结果的具体路径。我们使用模糊集定性比较分析（fsQCA）对数据进行了分析，这是一种非对称方法，用于寻找导致相同结果的条件替代组合。高行为意向和高感知文化绩效都被认为是配置分析的重点结果。"
+        },
+        {
+          "en": "Six sufficient configurations have been found for behavioral intention; among them, the top three configurations show consistencies ranging from 0.962 to 0.969 and coverages ranging from 0.844 to 0.874, implying that there are alternative combinations of conditions that lead to high behavioral intention through the interplay of perceptions about cultural performance, local identity, and cultural heritage.",
+          "zh": "我们找到了六种足以解释行为意向的配置；其中，前三种配置的一致性介于0.962至0.969之间，覆盖率介于0.844至0.874之间，这表明存在多种条件组合，通过对文化表现、地方认同和文化遗产的感知相互作用，可以产生较高的行为意向。"
+        },
+        {
+          "en": "Five configurations have been found in case of high perceived cultural performance, where the overall solution shows coverage value of 0.975 and consistency value of 0.905. Equifinality has thus been demonstrated, and none of the individual condition has been found to explain visitors' responses. The study adds to the literature in the domain of gastronomy and tourism by operationalizing the theory of cultural performance.",
+          "zh": "在感知文化表现较高的情形下，发现了五种配置，其中整体解决方案的覆盖值为 0.975，一致性值为 0.905。因此，等终性得到了证实，并且没有发现任何单个条件可以解释游客的反应。本研究通过将文化表演理论付诸实践，为美食与旅游领域的文献增添了新内容。"
+        }
+      ],
+      "url": "https://doi.org/10.30892/gtg.68405-1886"
+    },
+    {
+      "id": "oa_W7239727454",
+      "rel": 60,
+      "venue": "Frontiers in Psychology · 2026",
+      "type": "new",
+      "zh": "文化被稀释，传承就此终结？节日模拟化如何威胁到人们对文化延续性的感知，并引发一条通往身份延续性谈判的连锁路径",
+      "en": "Culture diluted, transmission ended? How festival simulacrisation threatens perceived cultural continuity and triggers a chain pathway to negotiated identity continuation",
+      "authors": "Jingyi Li, Yingji Li",
+      "absEn": "Festivals kept by Indigenous communities are changing through commercialisation: symbols detach from their setting, rituals are scripted for an audience, and cultural functions are repackaged as spectacle. We call this festival simulacrisation and treat it as a continuity threat arising inside the community, unlike the out-group threats that research on perceived collective continuity has mostly examined. Drawing on identity process theory, we propose that perceiving this change arouses discontinuity anxiety, which gives rise to compensatory transmission responsibility, a felt obligation to hand the culture on. That responsibility accompanies negotiated identity continuation, in which parents who see that the festival has changed still take their children to it and teach them its customs. We tested this with a survey of 328 resident parents of children under 18 around the Shilin Torch Festival in Yunnan, China, using partial least squares structural equation modelling. The direct paths from festival simulacrisation and from discontinuity anxiety to negotiated identity continuation were close to zero, whereas the path from compensatory transmission responsibility was strong (β = 0.72). Only the indirect effect through discontinuity anxiety and compensatory transmission responsibility in sequence had a confidence interval excluding zero (0.118, 95% CI [0.021, 0.230]), accounting for about 44% of the total indirect effect. The data are cross-sectional and from one case. The study extends perceived collective continuity research to a within-group threat and applies identity process theory to festival transmission.",
+      "abstract": "随着商业化的发展，原住民社区举办的节日正在发生变化：符号脱离了其所处的环境，仪式被编排成供观众欣赏的表演，文化功能被重新包装成一场盛大演出。我们将这种现象称为节日模拟化，并将其视为源自社区内部的连续性威胁，这与关于感知集体连续性的研究主要探讨的外群体威胁不同。 根据身份过程理论，我们认为，感知到这种变化会引发不连续性焦虑，进而产生补偿性传承责任，即一种将文化传承下去的义务感。这种责任伴随着协商后的身份延续，在这种情况下，看到节日已经发生变化的父母仍然会带孩子去参加节日，并教导他们节日习俗。 我们通过对中国云南石林火把节期间328名18岁以下儿童的常住父母进行调查，并使用偏最小二乘结构方程模型对这一点进行了检验。从节日拟像化和断裂焦虑到协商性身份延续的直接路径接近于零，而从补偿性传承责任到协商性身份延续的路径则很强（β = 0.72）。 只有通过断裂焦虑和补偿性传承责任依次产生的间接效应的置信区间不包含零（0.118，95% CI [0.021，0.230]），约占间接效应总量的44%。数据是横截面数据，且来自一个案例。本研究将感知到的集体延续性研究扩展到群体内部的威胁，并将身份过程理论应用于节日传承。",
+      "why": "命中你的主题：节事/事件。",
+      "tags": [
+        "节事/事件"
+      ],
+      "apa": "Li, J., & Li, Y. (2026). Culture diluted, transmission ended? How festival simulacrisation threatens perceived cultural continuity and triggers a chain pathway to negotiated identity continuation. <i>Frontiers in Psychology, 17</i>, 1985656. https://doi.org/10.3389/fpsyg.2026.1985656",
+      "paras": [
+        {
+          "en": "Festivals kept by Indigenous communities are changing through commercialisation: symbols detach from their setting, rituals are scripted for an audience, and cultural functions are repackaged as spectacle. We call this festival simulacrisation and treat it as a continuity threat arising inside the community, unlike the out-group threats that research on perceived collective continuity has mostly examined.",
+          "zh": "随着商业化的发展，原住民社区举办的节日正在发生变化：符号脱离了其所处的环境，仪式被编排成供观众欣赏的表演，文化功能被重新包装成一场盛大演出。我们将这种现象称为节日模拟化，并将其视为源自社区内部的连续性威胁，这与关于感知集体连续性的研究主要探讨的外群体威胁不同。"
+        },
+        {
+          "en": "Drawing on identity process theory, we propose that perceiving this change arouses discontinuity anxiety, which gives rise to compensatory transmission responsibility, a felt obligation to hand the culture on. That responsibility accompanies negotiated identity continuation, in which parents who see that the festival has changed still take their children to it and teach them its customs.",
+          "zh": "根据身份过程理论，我们认为，感知到这种变化会引发不连续性焦虑，进而产生补偿性传承责任，即一种将文化传承下去的义务感。这种责任伴随着协商后的身份延续，在这种情况下，看到节日已经发生变化的父母仍然会带孩子去参加节日，并教导他们节日习俗。"
+        },
+        {
+          "en": "We tested this with a survey of 328 resident parents of children under 18 around the Shilin Torch Festival in Yunnan, China, using partial least squares structural equation modelling. The direct paths from festival simulacrisation and from discontinuity anxiety to negotiated identity continuation were close to zero, whereas the path from compensatory transmission responsibility was strong (β = 0.72).",
+          "zh": "我们通过对中国云南石林火把节期间328名18岁以下儿童的常住父母进行调查，并使用偏最小二乘结构方程模型对这一点进行了检验。从节日拟像化和断裂焦虑到协商性身份延续的直接路径接近于零，而从补偿性传承责任到协商性身份延续的路径则很强（β = 0.72）。"
+        },
+        {
+          "en": "Only the indirect effect through discontinuity anxiety and compensatory transmission responsibility in sequence had a confidence interval excluding zero (0.118, 95% CI [0.021, 0.230]), accounting for about 44% of the total indirect effect. The data are cross-sectional and from one case. The study extends perceived collective continuity research to a within-group threat and applies identity process theory to festival transmission.",
+          "zh": "只有通过断裂焦虑和补偿性传承责任依次产生的间接效应的置信区间不包含零（0.118，95% CI [0.021，0.230]），约占间接效应总量的44%。数据是横截面数据，且来自一个案例。本研究将感知到的集体延续性研究扩展到群体内部的威胁，并将身份过程理论应用于节日传承。"
+        }
+      ],
+      "url": "https://doi.org/10.3389/fpsyg.2026.1985656"
+    },
     {
       "id": "oa_W7225347191",
       "rel": 56,
@@ -10,22 +85,22 @@
       "type": "new",
       "zh": "通过美食记忆探索当代宾夕法尼亚荷兰美食文化中的非物质文化遗产",
       "en": "Exploring intangible cultural heritage in contemporary Pennsylvania Dutch food culture through food memories",
-      "authors": "Madisen P. Plunkert, HELYA SEHAT, Max O. Stephenson Jr. et al.",
+      "authors": "Madisen P. Plunkert, Helya Sehat, Max O. Stephenson Jr. et al.",
       "absEn": "Introduction Food memories provide an important yet underexamined means through which communities articulate, transmit, and negotiate intangible cultural heritage, particularly when commercial heritagization privileges selected foods and cultural representations. This study examines how contemporary Pennsylvania Dutch cultural insiders construct food memories and what those narratives reveal about the maintenance and transmission of Pennsylvania Dutch food culture. Methods Using a narrative-based approach, we analyzed semi-structured interviews with seven cultural insiders, including chefs, home cooks, food-business owners, and cookbook authors, from Berks and York counties in Pennsylvania. We analyzed our interviewees’ narratives using a hybrid deductive–inductive approach guided by an adapted framework for analyzing food memories across four dimensions: embodied knowledge, emotions, people and communality, and evocative settings. Results Our participants’ narratives suggested that food-related knowledge is passed on through experience, family connections, and regional and seasonal food practices. Their food memories also suggested that assimilation, commodification, and heritagization processes can marginalize certain food practices and meanings important to community members. Discussion We contend that food memories may be understood as examples of narratively constructed intangible heritage through which culturally meaningful knowledge, skills, values, and practices become visible. Empirically, this article contributes to the study of food memories by providing insider perspectives concerning an underexamined regional food culture and by adapting a food memory framework for use in narrative interviewing.",
-      "abstract": "引言 食物记忆是一种重要但未得到充分研究的手段，社区通过这种手段来阐释、传承和协商非物质文化遗产，特别是在商业化遗产化优先考虑特定食物和文化表征的情况下。本研究探讨了当代宾夕法尼亚荷兰文化内部人士如何建构食物记忆，以及这些叙事揭示了宾夕法尼亚荷兰食物文化的传承与传播的哪些信息。 方法我们采用基于叙事的方法，对来自宾夕法尼亚州伯克斯县和约克县的七位文化圈内人士（包括厨师、家庭厨师、餐饮企业主和食谱作者）进行的半结构化访谈进行了分析。我们采用了一种混合的演绎-归纳方法，在经过调整的框架指导下，从四个维度分析了受访者的叙述，这四个维度分别是：具身知识、情感、人与共同体以及唤起记忆的环境。 结果 参与者的叙述表明，与食物相关的知识是通过经验、家庭关系以及区域和季节性饮食习惯传承下来的。他们的饮食记忆还表明，同化、商品化和遗产化过程可能会使某些对社区成员来说很重要的饮食习俗和意义边缘化。 讨论我们认为，可以将食物记忆理解为通过叙事建构的非物质文化遗产的范例，通过这些范例，具有文化意义的知识、技能、价值观和习俗得以显现。从经验角度来看，本文通过提供有关一个未得到充分研究的区域性饮食文化的内部视角，并通过调整饮食记忆框架以用于叙事访谈，为饮食记忆的研究做出了贡献。",
+      "abstract": "引言 食物记忆是一种重要但未得到充分研究的手段，社区通过这种手段来阐释、传承和协商非物质文化遗产，特别是在商业化遗产化优先考虑特定食物和文化表征的情况下。本研究探讨了当代宾夕法尼亚荷兰文化内部人士如何构建美食记忆，以及这些叙事揭示了宾夕法尼亚荷兰美食文化的传承与传播的哪些信息。 方法我们采用基于叙事的方法，对来自宾夕法尼亚州伯克斯县和约克县的七位文化圈内人士（包括厨师、家庭厨师、餐饮企业主和食谱书作者）进行了半结构化访谈分析。我们采用了一种混合的演绎-归纳方法，在经过调整的框架指导下，从四个维度分析了受访者的叙述，这四个维度分别是：具身知识、情感、人与共同体以及唤起回忆的场景。 结果 参与者的叙述表明，与食物相关的知识是通过经验、家庭关系以及区域和季节性饮食习惯传承下来的。他们的饮食记忆还表明，同化、商品化和遗产化过程可能会使某些对社区成员来说很重要的饮食习俗和意义边缘化。 讨论我们认为，可以将食物记忆理解为通过叙事建构的非物质文化遗产的范例，借此，具有文化意义的知识、技能、价值观和实践得以显现。从经验角度来看，本文通过提供有关一个未得到充分研究的区域性饮食文化的内部视角，并通过调整饮食记忆框架以用于叙事访谈，为饮食记忆的研究做出了贡献。",
       "why": "命中你的主题：社区/文化遗产。",
       "tags": [
         "社区/文化遗产"
       ],
-      "apa": "Plunkert, M. P., SEHAT, H., Jr., M. O. S., & Niewolny, K. L. (2026). Exploring intangible cultural heritage in contemporary Pennsylvania Dutch food culture through food memories. <i>Frontiers in Sustainable Food Systems, 10</i>, 1931242. https://doi.org/10.3389/fsufs.2026.1931242",
+      "apa": "Plunkert, M. P., Sehat, H., Jr., M. O. S., & Niewolny, K. L. (2026). Exploring intangible cultural heritage in contemporary Pennsylvania Dutch food culture through food memories. <i>Frontiers in Sustainable Food Systems, 10</i>, 1931242. https://doi.org/10.3389/fsufs.2026.1931242",
       "paras": [
         {
           "en": "Introduction Food memories provide an important yet underexamined means through which communities articulate, transmit, and negotiate intangible cultural heritage, particularly when commercial heritagization privileges selected foods and cultural representations. This study examines how contemporary Pennsylvania Dutch cultural insiders construct food memories and what those narratives reveal about the maintenance and transmission of Pennsylvania Dutch food culture.",
-          "zh": "引言 食物记忆是一种重要但未得到充分研究的手段，社区通过这种手段来阐释、传承和协商非物质文化遗产，特别是在商业化遗产化优先考虑特定食物和文化表征的情况下。本研究探讨了当代宾夕法尼亚荷兰文化内部人士如何建构食物记忆，以及这些叙事揭示了宾夕法尼亚荷兰食物文化的传承与传播的哪些信息。"
+          "zh": "引言 食物记忆是一种重要但未得到充分研究的手段，社区通过这种手段来阐释、传承和协商非物质文化遗产，特别是在商业化遗产化优先考虑特定食物和文化表征的情况下。本研究探讨了当代宾夕法尼亚荷兰文化内部人士如何构建美食记忆，以及这些叙事揭示了宾夕法尼亚荷兰美食文化的传承与传播的哪些信息。"
         },
         {
           "en": "Methods Using a narrative-based approach, we analyzed semi-structured interviews with seven cultural insiders, including chefs, home cooks, food-business owners, and cookbook authors, from Berks and York counties in Pennsylvania. We analyzed our interviewees’ narratives using a hybrid deductive–inductive approach guided by an adapted framework for analyzing food memories across four dimensions: embodied knowledge, emotions, people and communality, and evocative settings.",
-          "zh": "方法我们采用基于叙事的方法，对来自宾夕法尼亚州伯克斯县和约克县的七位文化圈内人士（包括厨师、家庭厨师、餐饮企业主和食谱作者）进行的半结构化访谈进行了分析。我们采用了一种混合的演绎-归纳方法，在经过调整的框架指导下，从四个维度分析了受访者的叙述，这四个维度分别是：具身知识、情感、人与共同体以及唤起记忆的环境。"
+          "zh": "方法我们采用基于叙事的方法，对来自宾夕法尼亚州伯克斯县和约克县的七位文化圈内人士（包括厨师、家庭厨师、餐饮企业主和食谱书作者）进行了半结构化访谈分析。我们采用了一种混合的演绎-归纳方法，在经过调整的框架指导下，从四个维度分析了受访者的叙述，这四个维度分别是：具身知识、情感、人与共同体以及唤起回忆的场景。"
         },
         {
           "en": "Results Our participants’ narratives suggested that food-related knowledge is passed on through experience, family connections, and regional and seasonal food practices. Their food memories also suggested that assimilation, commodification, and heritagization processes can marginalize certain food practices and meanings important to community members.",
@@ -33,7 +108,7 @@
         },
         {
           "en": "Discussion We contend that food memories may be understood as examples of narratively constructed intangible heritage through which culturally meaningful knowledge, skills, values, and practices become visible. Empirically, this article contributes to the study of food memories by providing insider perspectives concerning an underexamined regional food culture and by adapting a food memory framework for use in narrative interviewing.",
-          "zh": "讨论我们认为，可以将食物记忆理解为通过叙事建构的非物质文化遗产的范例，通过这些范例，具有文化意义的知识、技能、价值观和习俗得以显现。从经验角度来看，本文通过提供有关一个未得到充分研究的区域性饮食文化的内部视角，并通过调整饮食记忆框架以用于叙事访谈，为饮食记忆的研究做出了贡献。"
+          "zh": "讨论我们认为，可以将食物记忆理解为通过叙事建构的非物质文化遗产的范例，借此，具有文化意义的知识、技能、价值观和实践得以显现。从经验角度来看，本文通过提供有关一个未得到充分研究的区域性饮食文化的内部视角，并通过调整饮食记忆框架以用于叙事访谈，为饮食记忆的研究做出了贡献。"
         }
       ],
       "url": "https://doi.org/10.3389/fsufs.2026.1931242"
